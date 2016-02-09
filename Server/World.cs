@@ -98,10 +98,7 @@ namespace Server {
 		public static void Broadcast( int hue, bool ascii, string text ) {
 			Packet p;
 
-			if ( ascii )
-				p = new AsciiMessage( Serial.MinusOne, -1, MessageType.Regular, hue, 3, "System", text );
-			else
-				p = new UnicodeMessage( Serial.MinusOne, -1, MessageType.Regular, hue, 3, "ENU", "System", text );
+            p = new UnicodeMessage( Serial.MinusOne, -1, MessageType.Regular, hue, 3, "ENU", "System", text );
 
 			List<NetState> list = NetState.Instances;
 
@@ -767,7 +764,7 @@ namespace Server {
 			m_DiskWriteHandle.Reset();
 
 			if ( message )
-				Broadcast( 0x35, true, "O mundo está sendo salvo, por favor aguarde." );
+				Broadcast( 0x35, true, "Salvando o mundo, por favor aguarde." );
 
 			SaveStrategy strategy = SaveStrategy.Acquire();
 			Console.WriteLine( "Core: Usando estratégia de salvamento {0}.", strategy.Name.ToLowerInvariant() );
