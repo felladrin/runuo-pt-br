@@ -1,28 +1,26 @@
-runuo
-=====
-
-[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/4tjo91e4qotjtsgq?svg=true)](https://ci.appveyor.com/project/ms/runuo) [![Travis Build Status](https://travis-ci.org/runuo/runuo.svg)](https://travis-ci.org/runuo/runuo)
+# RunUO em Porutuguês do Brasil
 
 [![Join the chat at https://gitter.im/runuo/runuo](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/runuo/runuo?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-RunUO Git Repository
+Este é um fork do [RunUO 2.6](https://github.com/runuo/runuo/tree/releases/2.6) que visa traduzir todas as strings do servidor, sem alterar nenhuma funcionalidade do emulador.
 
-Typical Windows Build
+## Rodando o Servidor no Windows
 
-PS C:\runuo> C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc /optimize /unsafe /t:exe /out:RunUO.exe /win32icon:Server\runuo.ico /recurse:Server\\*.cs
+1. [Baixe este repositório](https://github.com/felladrin/last-wish/archive/master.zip) ou clone-o.
+2. Rode `CompilarParaWindows.bat` para gerar os arquivos *RunUO.exe* e *RunUO.exe.config* na pasta.
+3. Então execute RunUO.exe
 
+## Rodando o Servidor no Ubuntu
 
-Typical Linux Build (MONO)
+Aqui estão todos os comandos que você precisa executar, em ordem, para ter o servidor pronto para uso:
 
-~/runuo$ mcs -optimize+ -unsafe -t:exe -out:RunUO.exe -win32icon:Server/runuo.ico -nowarn:219,414 -d:MONO -recurse:Server/*.cs
+    apt-get update
+    apt-get install mono-complete git
+    git clone --depth 1 https://github.com/felladrin/runuo-pt-br.git
+    cd runuo-pt-br
+    mcs -optimize+ -unsafe -t:exe -out:RunUO.exe -win32icon:Server/runuo.ico -nowarn:219,414 -d:MONO -recurse:Server/*.cs
+    cp RunUO.exe.config.Linux RunUO.exe.config
+    chmod +x cron.sh
+    mono RunUO.exe
 
-
-zlib is required for certain functionality. Windows zlib builds are packaged with releases and can also be obtained separately here: https://github.com/msturgill/zlib/releases/latest
-
-RunUO supports Intel's hardware random number generator (Secure Key, Bull Mountain, rdrand, etc). If rdrand32.dll/rdrand64.dll are present in the base directory and the hardware supports that functionality, it will be used automatically. You can find those libraries here: https://github.com/msturgill/rdrand/releases/latest
-
-Latest Razor builds can be found at https://github.com/msturgill/razor/releases/latest
-
-Latest UOSteam builds (previously AssistUO) can be found at http://uosteam.com
-
-IRC: chat.freenode.net #runuo
+Se você deseja rodá-lo manualmente, como uma tarefa rodando em segundo plano, digite `nohup mono RunUO.exe >> console.log &`. E depois, antes de fechar o terminal, digite: `disown` para desvincular o processo do terminal. Porém, melhor do que fazer a execução manual é configurar um trabalho cron para executar o arquivo `cron.sh` periodicamente (por exemplo, a cada 3 minutos). O cron.sh é um simples script que verifica se RunUO.exe já está em execução, e se não estiver, ele o inicializa.
