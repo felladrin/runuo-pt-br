@@ -4,6 +4,8 @@
 
 Este é um fork do [RunUO 2.6](https://github.com/runuo/runuo/tree/releases/2.6) que visa traduzir todas as strings do servidor, sem alterar nenhuma funcionalidade do emulador.
 
+![](http://i.imgur.com/mccrlR0.png)
+
 ## Rodando o Servidor no Windows
 
 1. [Baixe este repositório](https://github.com/felladrin/last-wish/archive/master.zip) ou clone-o.
