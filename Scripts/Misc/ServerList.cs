@@ -39,7 +39,7 @@ namespace Server.Misc
 		 */
 
 		public static readonly string Address = null;
-		public static readonly string ServerName = "RunUO TC";
+		public static readonly string ServerName = "RunUO BR";
 
 		public static readonly bool AutoDetect = true;
 
@@ -87,13 +87,13 @@ namespace Server.Misc
 		private static void AutoDetection()
 		{
 			if ( !HasPublicIPAddress() ) {
-				Console.Write( "ServerList: Auto-detecting public IP address..." );
+				Console.Write( "ServerList: Auto-deteção do endereço de IP... " );
 				m_PublicAddress = FindPublicAddress();
 
 				if ( m_PublicAddress != null )
-					Console.WriteLine( "done ({0})", m_PublicAddress.ToString() );
+                    Console.WriteLine("Concluída ({0})", m_PublicAddress);
 				else
-					Console.WriteLine( "failed" );
+					Console.WriteLine("Falhou");
 			}
 		}
 
@@ -173,7 +173,7 @@ namespace Server.Misc
 		private static IPAddress FindPublicAddress()
 		{
 			try {
-				WebRequest req = HttpWebRequest.Create( "http://uo.cx/ip.php" );
+                WebRequest req = WebRequest.Create( "http://api.ipify.org/" );
 
 				req.Timeout = 15000;
 

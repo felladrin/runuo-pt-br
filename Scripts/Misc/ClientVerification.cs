@@ -115,7 +115,7 @@ namespace Server.Misc
 			if( Required != null )
 			{
 				Utility.PushColor( ConsoleColor.White );
-				Console.WriteLine( "Restricting client version to {0}. Action to be taken: {1}", Required, m_OldClientResponse );
+				Console.WriteLine( "Restringindo a versão do cliente para {0}. Ação a ser tomada: {1}", Required, m_OldClientResponse );
 				Utility.PopColor();
 			}
 		}
@@ -131,7 +131,7 @@ namespace Server.Misc
 
 			if( Required != null && version < Required && ( m_OldClientResponse == OldClientResponse.Kick ||( m_OldClientResponse == OldClientResponse.LenientKick && (DateTime.UtcNow - state.Mobile.CreationTime) > m_AgeLeniency && state.Mobile is PlayerMobile && ((PlayerMobile)state.Mobile).GameTime > m_GameTimeLeniency )))
 			{
-				kickMessage = String.Format( "This server requires your client version be at least {0}.", Required );
+				kickMessage = String.Format( "O servidor requer que a versão do seu cliente seja pelo menos {0}.", Required );
 			}
 			else if( !AllowGod || !AllowRegular || !AllowUOTD )
 			{
@@ -164,7 +164,7 @@ namespace Server.Misc
 			if( kickMessage != null )
 			{
 				state.Mobile.SendMessage( 0x22, kickMessage );
-				state.Mobile.SendMessage( 0x22, "You will be disconnected in {0} seconds.", KickDelay.TotalSeconds );
+				state.Mobile.SendMessage( 0x22, "Você será desconectado em {0} segundos.", KickDelay.TotalSeconds );
 
 				Timer.DelayCall( KickDelay, delegate
 				{

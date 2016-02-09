@@ -265,7 +265,7 @@ namespace Server
 
 		private static void CurrentDomain_UnhandledException( object sender, UnhandledExceptionEventArgs e )
 		{
-			Console.WriteLine( e.IsTerminating ? "Error:" : "Warning:" );
+			Console.WriteLine( e.IsTerminating ? "Erro:" : "Aviso:" );
 			Console.WriteLine( e.ExceptionObject );
 
 			if( e.IsTerminating )
@@ -299,7 +299,7 @@ namespace Server
 					{
 					}
 
-					Console.WriteLine( "This exception is fatal, press return to exit" );
+					Console.WriteLine( "Esta exceção é fatal, pressione ENTER para finalizar." );
 					Console.ReadLine();
 				}
 
@@ -371,7 +371,7 @@ namespace Server
 
 			m_Closing = true;
 
-			Console.Write( "Exiting..." );
+			Console.Write( "Finalizando..." );
 
 			World.WaitForWriteCompletion();
 
@@ -447,13 +447,13 @@ namespace Server
 			Version ver = m_Assembly.GetName().Version;
 
 			// Added to help future code support on forums, as a 'check' people can ask for to it see if they recompiled core or not
-			Console.WriteLine("RunUO - [https://github.com/runuo/] Version {0}.{1}.{2}.{3}", ver.Major, ver.Minor, ver.Build, ver.Revision);
-			Console.WriteLine("Core: Running on .NET Framework Version {0}.{1}.{2}", Environment.Version.Major, Environment.Version.Minor, Environment.Version.Build);
+			Console.WriteLine("RunUO - [https://github.com/runuo/] Versão {0}.{1}.{2}.{3}", ver.Major, ver.Minor, ver.Build, ver.Revision);
+			Console.WriteLine("Core: Rodando em .NET Framework Versão {0}.{1}.{2}", Environment.Version.Major, Environment.Version.Minor, Environment.Version.Build);
 
 			string s = Arguments;
 
 			if( s.Length > 0 )
-				Console.WriteLine( "Core: Running with arguments: {0}", s );
+                Console.WriteLine( "Core: Rodando com argumentos: {0}", s );
 
 			m_ProcessorCount = Environment.ProcessorCount;
 
@@ -461,12 +461,12 @@ namespace Server
 				m_MultiProcessor = true;
 
 			if( m_MultiProcessor || Is64Bit )
-				Console.WriteLine( "Core: Optimizing for {0} {2}processor{1}", m_ProcessorCount, m_ProcessorCount == 1 ? "" : "s", Is64Bit ? "64-bit " : "" );
+                Console.WriteLine( "Core: Otimizando para {0} processador{1} {2}", m_ProcessorCount, m_ProcessorCount == 1 ? "" : "es", Is64Bit ? "64-bit" : "" );
 
 			int platform = (int)Environment.OSVersion.Platform;
 			if( platform == 4 || platform == 128 ) { // MS 4, MONO 128
 				m_Unix = true;
-				Console.WriteLine( "Core: Unix environment detected" );
+				Console.WriteLine( "Core: Ambiente Unix detectado" );
 			}
 			else {
 				m_ConsoleEventHandler = OnConsoleEvent;
@@ -474,7 +474,7 @@ namespace Server
 			}
 
 			if ( GCSettings.IsServerGC )
-				Console.WriteLine("Core: Server garbage collection mode enabled");
+				Console.WriteLine("Core: Coleta de lixo habilitada no servidor");
 
 			if (_UseHRT)
 				Console.WriteLine("Core: Requested high resolution timing ({0})", UsingHighResolutionTiming ? "Supported" : "Unsupported");
@@ -483,12 +483,12 @@ namespace Server
 
 			while( !ScriptCompiler.Compile( m_Debug, m_Cache ) )
 			{
-				Console.WriteLine( "Scripts: One or more scripts failed to compile or no script files were found." );
+				Console.WriteLine( "Scripts: Um ou mais scripts nao puderam ser compilados ou nenhum script foi encontrado." );
 				
 				if( m_Service )
 					return;
 
-				Console.WriteLine( " - Press return to exit, or R to try again." );
+				Console.WriteLine( " - Pressione ENTER para sair, ou R para tentar novamente." );
 				
 				if( Console.ReadKey( true ).Key != ConsoleKey.R )
 					return;

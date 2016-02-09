@@ -864,7 +864,7 @@ namespace Server
 				return;
 			}
 
-			Console.Write( "Regions: Loading..." );
+			Console.Write( "Regiões: Carregando... " );
 
 			XmlDocument doc = new XmlDocument();
 			doc.Load( System.IO.Path.Combine( Core.BaseDirectory, "Data/Regions.xml" ) );
@@ -873,7 +873,7 @@ namespace Server
 
 			if ( root == null )
 			{
-				Console.WriteLine( "Could not find root element 'ServerRegions' in Regions.xml" );
+				Console.WriteLine( "Não pôde encontrar o elemento 'ServerRegions' em Regions.xml" );
 			}
 			else
 			{
@@ -890,7 +890,7 @@ namespace Server
 				}
 			}
 
-			Console.WriteLine( "done" );
+			Console.WriteLine( "Pronto" );
 		}
 
 		private static void LoadRegions( XmlElement xml, Map map, Region parent )
@@ -903,7 +903,7 @@ namespace Server
 
 				if ( !typeof( Region ).IsAssignableFrom( type ) )
 				{
-					Console.WriteLine( "Invalid region type '{0}' in regions.xml", type.FullName );
+                    Console.WriteLine( "Tipo de região '{0}' inválida em regions.xml", type.FullName );
 					continue;
 				}
 
@@ -914,7 +914,7 @@ namespace Server
 				}
 				catch ( Exception ex )
 				{
-					Console.WriteLine( "Error during the creation of region type '{0}': {1}", type.FullName, ex );
+					Console.WriteLine( "Erro durante a criação da região do tipo '{0}': {1}", type.FullName, ex );
 					continue;
 				}
 

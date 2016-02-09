@@ -126,22 +126,22 @@ namespace Server.Network
 					IPInterfaceProperties properties = adapter.GetIPProperties();
 					foreach ( IPAddressInformation unicast in properties.UnicastAddresses ) {
 						if ( ipep.AddressFamily == unicast.Address.AddressFamily )
-							Console.WriteLine( "Listening: {0}:{1}", unicast.Address, ipep.Port );
+							Console.WriteLine( "Ouvindo: {0}:{1}", unicast.Address, ipep.Port );
 					}
 				}
 				/*
 				try {
-					Console.WriteLine( "Listening: {0}:{1}", IPAddress.Loopback, ipep.Port );
+					Console.WriteLine( "Ouvindo: {0}:{1}", IPAddress.Loopback, ipep.Port );
 					IPHostEntry iphe = Dns.GetHostEntry( Dns.GetHostName() );
 					IPAddress[] ip = iphe.AddressList;
 					for ( int i = 0; i < ip.Length; ++i )
-						Console.WriteLine( "Listening: {0}:{1}", ip[i], ipep.Port );
+						Console.WriteLine( "Ouvindo: {0}:{1}", ip[i], ipep.Port );
 				}
 				catch { }
 				*/
 			}
 			else {
-				Console.WriteLine( "Listening: {0}:{1}", ipep.Address, ipep.Port );
+                Console.WriteLine( "Ouvindo: {0}:{1}", ipep.Address, ipep.Port );
 			}
 		}
 

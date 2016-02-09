@@ -64,7 +64,7 @@ namespace Server {
 		{
 			if( m_DiskWriteHandle.Set())
 			{
-				Console.WriteLine("Closing Save Files. ");
+				Console.WriteLine("Fechando arquivos de salvamento.");
 			}
 		}
 
@@ -305,7 +305,7 @@ namespace Server {
 						if (Console.ReadKey(true).Key == ConsoleKey.Y)
 						{
 							types.Add(null);
-							Console.Write("World: Loading...");
+							Console.Write("Mundo: Carregando... ");
 							continue;
 						}
 
@@ -341,7 +341,7 @@ namespace Server {
 			m_Loaded = true;
 			m_LoadingType = null;
 
-			Console.Write( "World: Loading..." );
+            Console.Write( "Mundo: Carregando... " );
 
 			Stopwatch watch = Stopwatch.StartNew();
 
@@ -660,7 +660,7 @@ namespace Server {
 
 			watch.Stop();
 
-			Console.WriteLine( "done ({1} items, {2} mobiles) ({0:F2} seconds)", watch.Elapsed.TotalSeconds, m_Items.Count, m_Mobiles.Count );
+			Console.WriteLine( "Pronto ({1} itens, {2} mobiles) ({0:F2} segundos)", watch.Elapsed.TotalSeconds, m_Items.Count, m_Mobiles.Count );
 		}
 
 		private static void ProcessSafetyQueues() {
@@ -767,12 +767,12 @@ namespace Server {
 			m_DiskWriteHandle.Reset();
 
 			if ( message )
-				Broadcast( 0x35, true, "The world is saving, please wait." );
+				Broadcast( 0x35, true, "O mundo está sendo salvo, por favor aguarde." );
 
 			SaveStrategy strategy = SaveStrategy.Acquire();
-			Console.WriteLine( "Core: Using {0} save strategy", strategy.Name.ToLowerInvariant() );
+			Console.WriteLine( "Core: Usando estratégia de salvamento {0}.", strategy.Name.ToLowerInvariant() );
 
-			Console.Write( "World: Saving..." );
+			Console.Write( "Mundo: Salvando... " );
 
 			Stopwatch watch = Stopwatch.StartNew();
 
@@ -791,7 +791,7 @@ namespace Server {
 			try {
 				EventSink.InvokeWorldSave( new WorldSaveEventArgs( message ) );
 			} catch ( Exception e ) {
-				throw new Exception( "World Save event threw an exception.  Save failed!", e );
+				throw new Exception( "Salvamento do Mundo lançou uma exceção. Salvamento falhou!", e );
 			}
 
 			watch.Stop();
@@ -805,10 +805,10 @@ namespace Server {
 
 			strategy.ProcessDecay();
 
-			Console.WriteLine( "Save done in {0:F2} seconds.", watch.Elapsed.TotalSeconds );
+			Console.WriteLine( "Salvamento efetuado em {0:F2} segundos.", watch.Elapsed.TotalSeconds );
 
 			if ( message )
-				Broadcast( 0x35, true, "World save complete. The entire process took {0:F1} seconds.", watch.Elapsed.TotalSeconds );
+				Broadcast( 0x35, true, "Salvamento finalizado. O proceso completo levou {0:F1} segundos.", watch.Elapsed.TotalSeconds );
 
 			NetState.Resume();
 		}

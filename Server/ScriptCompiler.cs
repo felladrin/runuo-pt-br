@@ -154,12 +154,12 @@ namespace Server
 
 		public static bool CompileCSScripts( bool debug, bool cache, out Assembly assembly )
 		{
-			Console.Write( "Scripts: Compiling C# scripts..." );
+			Console.Write( "Scripts: Compilando Scripts C#... " );
 			string[] files = GetScripts( "*.cs" );
 
 			if( files.Length == 0 )
 			{
-				Console.WriteLine( "no files found." );
+				Console.WriteLine( "Nenhum arquivo encontrado." );
 				assembly = null;
 				return true;
 			}
@@ -200,7 +200,7 @@ namespace Server
 											m_AdditionalReferences.Add( assembly.Location );
 										}
 
-										Console.WriteLine( "done (cached)" );
+										Console.WriteLine( "Pronto (encontrado em cache)" );
 
 										return true;
 									}
@@ -294,12 +294,12 @@ namespace Server
 
 		public static bool CompileVBScripts( bool debug, bool cache, out Assembly assembly )
 		{
-			Console.Write( "Scripts: Compiling VB.NET scripts..." );
+			Console.Write( "Scripts: Compilando Scripts VB.NET... " );
 			string[] files = GetScripts( "*.vb" );
 
 			if( files.Length == 0 )
 			{
-				Console.WriteLine( "no files found." );
+				Console.WriteLine( "Nenhum arquivo encontrado." );
 				assembly = null;
 				return true;
 			}
@@ -340,7 +340,7 @@ namespace Server
 											m_AdditionalReferences.Add( assembly.Location );
 										}
 
-										Console.WriteLine( "done (cached)" );
+										Console.WriteLine( "Pronto (encontrado em cache)" );
 
 										return true;
 									}
@@ -434,9 +434,9 @@ namespace Server
 				}
 
 				if( errors.Count > 0 )
-					Console.WriteLine( "failed ({0} errors, {1} warnings)", errors.Count, warnings.Count );
+					Console.WriteLine( "Falhou ({0} erros, {1} avisos)", errors.Count, warnings.Count );
 				else
-					Console.WriteLine( "done ({0} errors, {1} warnings)", errors.Count, warnings.Count );
+                    Console.WriteLine( "Pronto ({0} erros, {1} avisos)", errors.Count, warnings.Count );
 
 				string scriptRoot = Path.GetFullPath( Path.Combine( Core.BaseDirectory, "Scripts" + Path.DirectorySeparatorChar ) );
 				Uri scriptRootUri = new Uri( scriptRoot );
@@ -444,7 +444,7 @@ namespace Server
 				Utility.PushColor( ConsoleColor.Yellow );
 
 				if( warnings.Count > 0 )
-					Console.WriteLine( "Warnings:" );
+					Console.WriteLine( "Avisos:" );
 
 				foreach( KeyValuePair<string, List<CompilerError>> kvp in warnings )
 				{
@@ -459,7 +459,7 @@ namespace Server
 					Utility.PushColor( ConsoleColor.DarkYellow );
 
 					foreach( CompilerError e in list )
-						Console.WriteLine( "    {0}: Line {1}: {2}", e.ErrorNumber, e.Line, e.ErrorText );
+						Console.WriteLine( "    {0}: Linha {1}: {2}", e.ErrorNumber, e.Line, e.ErrorText );
 
 					Utility.PopColor();
 				}
@@ -469,7 +469,7 @@ namespace Server
 				Utility.PushColor( ConsoleColor.Red );
 
 				if( errors.Count > 0 )
-					Console.WriteLine( "Errors:" );
+					Console.WriteLine( "Erros:" );
 
 				foreach( KeyValuePair<string, List<CompilerError>> kvp in errors )
 				{
@@ -484,7 +484,7 @@ namespace Server
 					Utility.PushColor( ConsoleColor.DarkRed );
 
 					foreach( CompilerError e in list )
-						Console.WriteLine( "    {0}: Line {1}: {2}", e.ErrorNumber, e.Line, e.ErrorText );
+						Console.WriteLine( "    {0}: Linha {1}: {2}", e.ErrorNumber, e.Line, e.ErrorText );
 
 					Utility.PopColor();
 				}
@@ -493,7 +493,7 @@ namespace Server
 			}
 			else
 			{
-				Console.WriteLine( "done (0 errors, 0 warnings)" );
+				Console.WriteLine( "Pronto (0 erros, 0 avisos)" );
 			}
 		}
 
@@ -576,7 +576,7 @@ namespace Server
 			}
 			else
 			{
-				Console.WriteLine( "Scripts: Skipping VB.NET Scripts...done (use -vb to enable)");
+				Console.WriteLine( "Scripts: Pulando Scripts VB.NET... Pronto (use o parâmetro -vb para habilitar)");
 			}
 
 			if( assemblies.Count == 0 )
@@ -586,7 +586,7 @@ namespace Server
 
 			m_Assemblies = assemblies.ToArray();
 
-			Console.Write( "Scripts: Verifying..." );
+			Console.Write( "Scripts: Verificando... " );
 
 			Stopwatch watch = Stopwatch.StartNew();
 			
@@ -594,7 +594,7 @@ namespace Server
 			
 			watch.Stop();
 
-			Console.WriteLine("done ({0} items, {1} mobiles) ({2:F2} seconds)", Core.ScriptItems, Core.ScriptMobiles, watch.Elapsed.TotalSeconds);
+			Console.WriteLine("Pronto ({0} itens, {1} mobiles) ({2:F2} segundos)", Core.ScriptItems, Core.ScriptMobiles, watch.Elapsed.TotalSeconds);
 
 			return true;
 		}
