@@ -4,13 +4,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a liche's corpse" )]
+    [CorpseName( "o corpo de um lich" )]
 	public class LichLord : BaseCreature
 	{
 		[Constructable]
 		public LichLord() : base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a lich lord";
+            Name = "um lich lorde";
 			Body = 79;
 			BaseSoundID = 412;
 

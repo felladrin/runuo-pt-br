@@ -4,7 +4,7 @@ using Server.Mobiles;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a war horse corpse" )]
+    [CorpseName( "o corpo de um cavalo de guerra" )]
 	public abstract class BaseWarHorse : BaseMount
 	{
 		public BaseWarHorse( int bodyID, int itemID, AIType aiType, FightMode fightMode, int rangePerception, int rangeFight, double activeSpeed, double passiveSpeed ) : base ( "a war horse", bodyID, itemID, aiType, fightMode, rangePerception, rangeFight, activeSpeed, passiveSpeed )

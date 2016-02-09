@@ -4,7 +4,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "an abyssmal horror corpse" )]
+    [CorpseName( "o corpo de um horror abismal" )]
 	public class AbysmalHorror : BaseCreature
 	{
 		public override WeaponAbility GetWeaponAbility()
@@ -17,7 +17,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public AbysmalHorror() : base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "an abyssmal horror";
+            Name = "um horror abismal";
 			Body = 312;
 			BaseSoundID = 0x451;
 

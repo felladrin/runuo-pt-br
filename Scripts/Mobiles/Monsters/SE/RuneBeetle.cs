@@ -6,7 +6,7 @@ using Server.Targeting;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a rune beetle corpse" )]
+    [CorpseName( "o corpo de um besouro de runas" )]
 	public class RuneBeetle : BaseCreature
 	{
 		public override WeaponAbility GetWeaponAbility()
@@ -17,7 +17,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public RuneBeetle() : base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a rune beetle";
+            Name = "um besouro de runas";
 			Body = 244;
 
 			SetStr( 401, 460 );

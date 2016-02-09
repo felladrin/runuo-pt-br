@@ -5,13 +5,13 @@ using Server.Targeting;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a cyclopean corpse" )]
+    [CorpseName( "o corpo de um guerreiro ciclope" )]
 	public class Cyclops : BaseCreature
 	{
 		[Constructable]
 		public Cyclops() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a cyclopean warrior";
+            Name = "um guerreiro ciclope";
 			Body = 75;
 			BaseSoundID = 604;
 

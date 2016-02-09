@@ -5,7 +5,7 @@ using Server.Mobiles;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a Swoop corpse" )]
+    [CorpseName( "o corpo de Swoop" )]
 	public class Swoop : Eagle
 	{
 		[Constructable]

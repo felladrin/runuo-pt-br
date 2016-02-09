@@ -4,11 +4,11 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a reptalon corpse" )]
+    [CorpseName( "o corpo de um reptalon" )]
 	public class Reptalon : BaseMount
 	{
 		[Constructable]
-		public Reptalon() : base( "a reptalon", 0x114, 0x3E90, AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.35 )
+        public Reptalon() : base( "um reptalon", 0x114, 0x3E90, AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.35 )
 		{
 			BaseSoundID = 0x16A;
 

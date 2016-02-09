@@ -3,14 +3,14 @@ using Server.Mobiles;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a bull frog corpse" )]
+    [CorpseName( "o corpo de uma rã-touro" )]
 	[TypeAlias( "Server.Mobiles.Bullfrog" )]
 	public class BullFrog : BaseCreature
 	{
 		[Constructable]
 		public BullFrog() : base( AIType.AI_Animal, FightMode.Aggressor, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a bull frog";
+            Name = "uma rã-touro";
 			Body = 81;
 			Hue = Utility.RandomList( 0x5AC,0x5A3,0x59A,0x591,0x588,0x57F );
 			BaseSoundID = 0x266;

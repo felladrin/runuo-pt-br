@@ -5,7 +5,7 @@ using Server.Targeting;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a chaos daemon corpse" )]
+    [CorpseName( "o corpo de um demônio do caos" )]
 	public class ChaosDaemon : BaseCreature
 	{
 		public override WeaponAbility GetWeaponAbility()
@@ -16,7 +16,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public ChaosDaemon() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a chaos daemon";
+            Name = "um demônio do caos";
 			Body = 792;
 			BaseSoundID = 0x3E9;
 

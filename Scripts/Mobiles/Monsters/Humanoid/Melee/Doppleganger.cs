@@ -3,13 +3,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a doppleganger corpse" )]
+    [CorpseName( "o corpo de um doppleganger" )]
 	public class Doppleganger : BaseCreature
 	{
 		[Constructable]
 		public Doppleganger() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a doppleganger";
+            Name = "um doppleganger";
 			Body = 0x309;
 			BaseSoundID = 0x451;
 

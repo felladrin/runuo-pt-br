@@ -4,13 +4,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a shadow wyrm corpse" )]
+    [CorpseName( "o corpo de um wyrm fantasma" )]
 	public class ShadowWyrm : BaseCreature
 	{
 		[Constructable]
 		public ShadowWyrm() : base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a shadow wyrm";
+            Name = "um wyrm fantasma";
 			Body = 106;
 			BaseSoundID = 362;
 

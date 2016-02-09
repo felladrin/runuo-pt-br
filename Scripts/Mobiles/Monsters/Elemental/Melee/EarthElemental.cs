@@ -5,7 +5,7 @@ using Server.Targeting;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "an earth elemental corpse" )]
+    [CorpseName( "o corpo de um elemental da terra" )]
 	public class EarthElemental : BaseCreature
 	{
 		public override double DispelDifficulty{ get{ return 117.5; } }

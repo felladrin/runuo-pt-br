@@ -4,14 +4,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a deathwatchbeetle hatchling corpse" )]
+    [CorpseName( "o corpo de um besouro ceifador" )]
 	[TypeAlias( "Server.Mobiles.DeathWatchBeetleHatchling" )]
 	public class DeathwatchBeetleHatchling : BaseCreature
 	{
 		[Constructable]
 		public DeathwatchBeetleHatchling() : base( AIType.AI_Melee, Core.ML ? FightMode.Aggressor : FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a deathwatch beetle hatchling";
+            Name = "um besouro ceifador filhote";
 			Body = 242;
 
 			SetStr( 26, 50 );

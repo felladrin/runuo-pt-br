@@ -3,14 +3,14 @@ using Server.Mobiles;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a jack rabbit corpse" )]
+    [CorpseName( "o corpo de um coelho vermelho" )]
 	[TypeAlias( "Server.Mobiles.Jackrabbit" )]
 	public class JackRabbit : BaseCreature
 	{
 		[Constructable]
 		public JackRabbit() : base( AIType.AI_Animal, FightMode.Aggressor, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a jack rabbit";
+			Name = "um coelho vermelho";
 			Body = 0xCD;
 			Hue = 0x1BB;
 

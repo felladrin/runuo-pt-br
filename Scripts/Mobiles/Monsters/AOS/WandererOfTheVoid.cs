@@ -4,13 +4,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a wanderer of the void corpse" )]
+    [CorpseName( "o corpo de um viajante do vazio" )]
 	public class WandererOfTheVoid : BaseCreature
 	{
 		[Constructable]
 		public WandererOfTheVoid() : base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a wanderer of the void";
+            Name = "um viajante do vazio";
 			Body = 316;
 			BaseSoundID = 377;
 

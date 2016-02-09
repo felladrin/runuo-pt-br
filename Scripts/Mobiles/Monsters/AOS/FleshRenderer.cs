@@ -4,7 +4,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a fleshrenderer corpse" )]
+	[CorpseName( "o corpo de um mutilador" )]
 	public class FleshRenderer : BaseCreature
 	{
 		public override WeaponAbility GetWeaponAbility()
@@ -17,7 +17,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public FleshRenderer() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a fleshrenderer";
+			Name = "um mutilador";
 			Body = 315;
 
 			SetStr( 401, 460 );

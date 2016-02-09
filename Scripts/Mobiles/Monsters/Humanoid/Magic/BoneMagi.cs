@@ -4,13 +4,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a skeletal corpse" )]
+    [CorpseName( "o corpo de um mago descarnado" )]
 	public class BoneMagi : BaseCreature
 	{
 		[Constructable]
 		public BoneMagi() : base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a bone mage";
+            Name = "um mago descarnado";
 			Body = 148;
 			BaseSoundID = 451;
 

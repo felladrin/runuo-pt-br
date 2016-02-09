@@ -4,14 +4,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a bake kitsune corpse" )]
+    [CorpseName( "o corpo de um bake kitsune" )]
 	public class BakeKitsune : BaseCreature
 	{
 
 		[Constructable]
 		public BakeKitsune() : base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a bake kitsune";
+			Name = "um bake kitsune";
 			Body = 246;
 
 			SetStr( 171, 220 );

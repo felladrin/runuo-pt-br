@@ -6,7 +6,7 @@ using Server.Misc;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "an orcish corpse" )]
+	[CorpseName( "o corpo de um orc" )]
 	public class OrcBomber : BaseCreature
 	{
 		public override InhumanSpeech SpeechType{ get{ return InhumanSpeech.Orc; } }
@@ -16,7 +16,7 @@ namespace Server.Mobiles
 		{
 			Body = 182;
 
-			Name = "an orc bomber";
+            Name = "um orc bombardeiro";
 			BaseSoundID = 0x45A;
 
 			SetStr( 147, 215 );

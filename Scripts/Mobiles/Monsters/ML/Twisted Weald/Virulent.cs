@@ -4,7 +4,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a Virulent corpse" )]
+    [CorpseName( "o corpo de Virulent" )]
 	public class Virulent : DreadSpider
 	{
 		[Constructable]

@@ -5,7 +5,7 @@ using System.Collections;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "an energy vortex corpse" )]
+    [CorpseName( "o corpo de um vórtice de energia" )]
 	public class EnergyVortex : BaseCreature
 	{
 		public override bool DeleteCorpseOnDeath { get { return Summoned; } }
@@ -23,7 +23,7 @@ namespace Server.Mobiles
 		public EnergyVortex()
 			: base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "an energy vortex";
+            Name = "um vórtice de energia";
 
 			if( Core.SE && 0.002 > Utility.RandomDouble() ) // Per OSI FoF, it's a 1/500 chance.
 			{

@@ -4,7 +4,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "an imp corpse" )]
+    [CorpseName( "o corpo de um imp" )]
 	public class ArcaneFiend : BaseCreature
 	{
 		public override double DispelDifficulty { get { return 70.0; } }
@@ -16,7 +16,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public ArcaneFiend() : base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "an imp";
+			Name = "um imp";
 			Body = 74;
 			BaseSoundID = 422;
 

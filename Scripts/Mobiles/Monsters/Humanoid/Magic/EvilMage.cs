@@ -5,14 +5,14 @@ using Server.Items;
 
 namespace Server.Mobiles 
 { 
-	[CorpseName( "an evil mage corpse" )] 
+    [CorpseName( "o corpo de um mago maléfico" )] 
 	public class EvilMage : BaseCreature 
 	{ 
 		[Constructable] 
 		public EvilMage() : base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 ) 
 		{ 
 			Name = NameList.RandomName( "evil mage" );
-			Title = "the evil mage";
+            Title = "o mago maléfico";
 			Body = 124;
 
 			SetStr( 81, 105 );

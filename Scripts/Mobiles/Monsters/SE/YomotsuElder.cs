@@ -6,7 +6,7 @@ using Server.Misc;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a wrinkly yomotsu corpse" )]
+    [CorpseName( "o corpo de um yomotsu ancião" )]
 	public class YomotsuElder : BaseCreature
 	{
 		public override WeaponAbility GetWeaponAbility()
@@ -17,7 +17,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public YomotsuElder() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a yomotsu elder";
+            Name = "um yomotsu ancião";
 			Body = 255;
 			BaseSoundID = 0x452;
 

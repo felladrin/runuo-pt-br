@@ -4,13 +4,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a plant corpse" )]
+    [CorpseName( "o corpo de um bicho do pântano" )]
 	public class BogThing : BaseCreature
 	{
 		[Constructable]
 		public BogThing() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.6, 1.2 )
 		{
-			Name = "a bog thing";
+            Name = "um bicho do pântano";
 			Body = 780;
 
 			SetStr( 801, 900 );

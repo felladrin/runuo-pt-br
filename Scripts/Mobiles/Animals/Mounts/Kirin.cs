@@ -5,7 +5,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a ki-rin corpse" )]
+    [CorpseName( "o corpo de um ki-rin" )]
 	public class Kirin : BaseMount
 	{
 		public override bool AllowFemaleRider{ get{ return false; } }
@@ -41,7 +41,7 @@ namespace Server.Mobiles
 		}
 
 		[Constructable]
-		public Kirin() : this( "a ki-rin" )
+		public Kirin() : this( "um ki-rin" )
 		{
 		}
 

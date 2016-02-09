@@ -4,7 +4,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a Master Jonath corpse" )]
+    [CorpseName( "o corpo de Master Jonath" )]
 	public class MasterJonath : BoneMagi
 	{
 		[Constructable]
@@ -12,7 +12,7 @@ namespace Server.Mobiles
 		{
 			IsParagon = true;
 
-			Name = "Master Jonath";
+            Name = "Master Jonath";
 			Hue = 0x455;
 
 			SetStr( 109, 131 );

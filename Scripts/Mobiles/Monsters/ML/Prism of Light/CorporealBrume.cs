@@ -4,14 +4,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a corporeal brume corpse" )]
+    [CorpseName( "o corpo de uma bruma corpórea" )]
 	public class CorporealBrume : BaseCreature
 	{
 		[Constructable]
 		public CorporealBrume()
 			: base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a corporeal brume";
+            Name = "uma bruma corpórea";
 			Body = 0x104; // TODO: Verify
 			BaseSoundID = 0x56B;
 

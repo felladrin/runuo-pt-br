@@ -4,13 +4,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a ghostly corpse" )]
+    [CorpseName( "um corpo fantasmagórico" )]
 	public class Spectre : BaseCreature
 	{
 		[Constructable]
 		public Spectre() : base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a spectre";
+            Name = "um espectro";
 			Body = 26;
 			Hue = 0x4001;
 			BaseSoundID = 0x482;

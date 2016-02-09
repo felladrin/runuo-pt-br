@@ -7,12 +7,12 @@ using Server.Network;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a vampire bat corpse" )]
+    [CorpseName( "o corpo de um morcego vampiro" )]
 	public class VampireBatFamiliar : BaseFamiliar
 	{
 		public VampireBatFamiliar()
 		{
-			Name = "a vampire bat";
+			Name = "um morcego vampiro";
 			Body = 317;
 			BaseSoundID = 0x270;
 

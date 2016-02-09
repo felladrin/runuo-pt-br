@@ -5,11 +5,11 @@ using Server.Gumps;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a cu sidhe corpse" )]
+    [CorpseName( "o corpo de um cu sidhe" )]
 	public class CuSidhe : BaseMount
 	{
 		[Constructable]
-		public CuSidhe() : this( "a cu sidhe" )
+		public CuSidhe() : this( "um cu sidhe" )
 		{
 		}
 

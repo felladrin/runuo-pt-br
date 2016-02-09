@@ -3,13 +3,13 @@ using Server.Mobiles;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a hare corpse" )]
+    [CorpseName( "o corpo de um coelho" )]
 	public class Rabbit : BaseCreature
 	{
 		[Constructable]
 		public Rabbit() : base( AIType.AI_Animal, FightMode.Aggressor, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a rabbit";
+			Name = "um coelho";
 			Body = 205;
 
 			if ( 0.5 >= Utility.RandomDouble() )

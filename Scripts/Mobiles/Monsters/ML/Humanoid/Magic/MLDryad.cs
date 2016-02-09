@@ -3,7 +3,7 @@ using Server.Engines.Plants;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a dryad's corpse" )]
+    [CorpseName( "o corpo de uma dríade" )]
 	public class MLDryad : BaseCreature
 	{
 		public override bool InitialInnocent { get { return true; } }
@@ -16,7 +16,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public MLDryad() : base( AIType.AI_Mage, FightMode.Evil, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a dryad";
+            Name = "uma dríade";
 			Body = 266;
 			BaseSoundID = 0x57B;
 

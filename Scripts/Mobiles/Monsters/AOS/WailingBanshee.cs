@@ -4,7 +4,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a wailing banshee corpse" )]
+    [CorpseName( "o corpo de uma banshee" )]
 	public class WailingBanshee : BaseCreature
 	{
 		public override WeaponAbility GetWeaponAbility()
@@ -15,7 +15,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public WailingBanshee() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a wailing banshee";
+			Name = "uma banshee";
 			Body = 310;
 			BaseSoundID = 0x482;
 

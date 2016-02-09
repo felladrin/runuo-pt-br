@@ -4,7 +4,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a daemon corpse" )]
+	[CorpseName( "o corpo de um demônio" )]
 	public class SummonedDaemon : BaseCreature
 	{
 		public override double DispelDifficulty{ get{ return 125.0; } }

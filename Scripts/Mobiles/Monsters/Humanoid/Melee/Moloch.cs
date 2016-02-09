@@ -3,7 +3,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a moloch corpse" )]
+    [CorpseName( "o corpo de um moloque" )]
 	public class Moloch : BaseCreature
 	{
 		public override WeaponAbility GetWeaponAbility()
@@ -14,7 +14,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public Moloch() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a moloch";
+            Name = "um moloque";
 			Body = 0x311;
 			BaseSoundID = 0x300;
 

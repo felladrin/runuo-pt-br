@@ -4,7 +4,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a tentacles corpse" )]
+    [CorpseName( "o corpo de tentáculos do Harrower" )]
 	public class HarrowerTentacles : BaseCreature
 	{
 		private Mobile m_Harrower;
@@ -33,7 +33,7 @@ namespace Server.Mobiles
 		{
 			m_Harrower = harrower;
 
-			Name = "tentacles of the harrower";
+            Name = "tentáculos do Harrower";
 			Body = 129;
 
 			SetStr( 901, 1000 );

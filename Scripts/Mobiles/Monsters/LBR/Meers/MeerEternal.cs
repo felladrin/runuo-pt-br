@@ -7,13 +7,13 @@ using Server.Spells;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a meer's corpse" )]
+    [CorpseName( "o corpo de um meer" )]
 	public class MeerEternal : BaseCreature
 	{
 		[Constructable]
 		public MeerEternal() : base( AIType.AI_Mage, FightMode.Evil, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a meer eternal";
+            Name = "um meer imortal";
 			Body = 772;
 
 			SetStr( 416, 505 );

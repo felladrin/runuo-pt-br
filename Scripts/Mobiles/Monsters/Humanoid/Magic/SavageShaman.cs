@@ -7,7 +7,7 @@ using Server.Spells;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a savage corpse" )]
+	[CorpseName( "o corpo de um selvagem" )]
 	public class SavageShaman : BaseCreature
 	{
 		[Constructable]

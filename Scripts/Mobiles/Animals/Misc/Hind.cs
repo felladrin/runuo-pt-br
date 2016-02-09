@@ -3,13 +3,13 @@ using Server.Mobiles;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a deer corpse" )]
+    [CorpseName( "o corpo de uma gazela" )]
 	public class Hind : BaseCreature
 	{
 		[Constructable]
 		public Hind() : base( AIType.AI_Animal, FightMode.Aggressor, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a hind";
+            Name = "uma gazela";
 			Body = 0xED;
 
 			SetStr( 21, 51 );

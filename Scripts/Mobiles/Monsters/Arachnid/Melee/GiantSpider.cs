@@ -5,13 +5,13 @@ using System.Collections;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a giant spider corpse" )]
+    [CorpseName( "o corpo de uma aranha gigante" )]
 	public class GiantSpider : BaseCreature
 	{
 		[Constructable]
 		public GiantSpider() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a giant spider";
+			Name = "uma aranha gigante";
 			Body = 28;
 			BaseSoundID = 0x388;
 

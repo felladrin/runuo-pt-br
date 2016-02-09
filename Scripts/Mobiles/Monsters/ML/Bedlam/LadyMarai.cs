@@ -5,7 +5,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a Lady Marai corpse" )]
+    [CorpseName( "o corpo de Lady Marai" )]
 	public class LadyMarai : SkeletalKnight
 	{
 		[Constructable]

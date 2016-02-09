@@ -7,12 +7,12 @@ using Server.Network;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a shadow wisp corpse" )]
+    [CorpseName( "o corpo de um wisp das sombras" )]
 	public class ShadowWispFamiliar : BaseFamiliar
 	{
 		public ShadowWispFamiliar()
 		{
-			Name = "a shadow wisp";
+			Name = "um wisp das sombras";
 			Body = 165;
 			Hue = 0x901;
 			BaseSoundID = 466;

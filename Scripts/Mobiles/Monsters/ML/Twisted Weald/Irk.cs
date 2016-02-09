@@ -4,7 +4,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "an Irk corpse" )]
+    [CorpseName( "o corpo de Irk" )]
 	public class Irk : Changeling
 	{
 		public override string DefaultName{ get{ return "Irk"; } }

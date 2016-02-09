@@ -4,7 +4,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a ravager corpse" )]
+    [CorpseName( "o corpo de um ravager" )]
 	public class Ravager : BaseCreature
 	{
 		public override WeaponAbility GetWeaponAbility()
@@ -15,7 +15,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public Ravager() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a ravager";
+            Name = "um ravager";
 			Body = 314;
 			BaseSoundID = 357;
 

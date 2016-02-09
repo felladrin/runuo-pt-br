@@ -5,13 +5,13 @@ using Server.Targeting;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a gargoyle corpse" )]
+    [CorpseName( "o corpo de uma gárgula de pedra" )]
 	public class StoneGargoyle : BaseCreature
 	{
 		[Constructable]
 		public StoneGargoyle() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a stone gargoyle";
+            Name = "uma gárgula de pedra";
 			Body = 67;
 			BaseSoundID = 0x174;
 

@@ -8,13 +8,13 @@ using Server.ContextMenus;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a giant beetle corpse" )]
+    [CorpseName( "o corpo de um besouro gigante" )]
 	public class Beetle : BaseMount
 	{
 		public virtual double BoostedSpeed{ get{ return 0.1; } }
 
 		[Constructable]
-		public Beetle() : this( "a giant beetle" )
+        public Beetle() : this( "um besouro gigante" )
 		{
 		}
 

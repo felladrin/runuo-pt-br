@@ -3,11 +3,11 @@ using Server.Mobiles;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a sea horse corpse" )]
+    [CorpseName( "o corpo de um cavalo-marinho" )]
 	public class SeaHorse : BaseMount
 	{
 		[Constructable]
-		public SeaHorse() : this( "a sea horse" )
+        public SeaHorse() : this( "um cavalo-marinho" )
 		{
 		}
 

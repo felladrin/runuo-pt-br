@@ -3,13 +3,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a wyvern corpse" )]
+    [CorpseName( "o corpo de um wyvern" )]
 	public class Wyvern : BaseCreature
 	{
 		[Constructable]
 		public Wyvern () : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a wyvern";
+			Name = "um wyvern";
 			Body = 62;
 			BaseSoundID = 362;
 

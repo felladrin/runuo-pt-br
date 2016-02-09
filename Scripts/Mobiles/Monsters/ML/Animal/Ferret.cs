@@ -4,13 +4,13 @@ using Server.Engines.Quests;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a ferret corpse" )]
+    [CorpseName( "o corpo de um furão" )]
 	public class Ferret : BaseCreature
 	{
 		[Constructable]
 		public Ferret() : base( AIType.AI_Animal, FightMode.Aggressor, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a ferret";
+            Name = "um furão";
 			Body = 0x117;
 
 			SetStr( 41, 48 );

@@ -4,7 +4,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a Gnaw corpse" )]
+    [CorpseName( "o corpo de Gnaw" )]
 	public class Gnaw : DireWolf
 	{
 		[Constructable]
@@ -12,7 +12,7 @@ namespace Server.Mobiles
 		{
 			IsParagon = true;
 
-			Name = "Gnaw";
+            Name = "Gnaw";
 			Hue = 0x130;
 
 			SetStr( 151, 172 );

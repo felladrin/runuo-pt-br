@@ -5,14 +5,14 @@ using Server.Targeting;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a lady of the snow corpse" )]
+    [CorpseName( "o corpo de uma dama da neve" )]
 	public class LadyOfTheSnow : BaseCreature
 	{
 		[Constructable]
 		public LadyOfTheSnow()
 			: base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a lady of the snow";
+            Name = "uma dama da neve";
 			Body = 252;
 			BaseSoundID = 0x482;
 

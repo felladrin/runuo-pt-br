@@ -3,7 +3,7 @@ using Server.Mobiles;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a hellsteed corpse" )]
+    [CorpseName( "o corpo de um corcel infernal" )]
 	public class HellSteed : BaseMount
 	{
 		public override bool HasBreath { get { return true; } }
@@ -11,7 +11,7 @@ namespace Server.Mobiles
 		public override Poison PoisonImmune{ get{ return Poison.Lethal; } }
 
 		[Constructable] 
-		public HellSteed() : this( "a hellsteed" )
+		public HellSteed() : this( "um corcel infernal" )
 		{
 		}
 

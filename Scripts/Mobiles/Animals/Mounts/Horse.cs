@@ -3,7 +3,7 @@ using Server.Mobiles;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a horse corpse" )]
+    [CorpseName( "o corpo de um cavalo" )]
 	[TypeAlias( "Server.Mobiles.BrownHorse", "Server.Mobiles.DirtyHorse", "Server.Mobiles.GrayHorse", "Server.Mobiles.TanHorse" )]
 	public class Horse : BaseMount
 	{
@@ -16,7 +16,7 @@ namespace Server.Mobiles
 			};
 
 		[Constructable]
-		public Horse() : this( "a horse" )
+		public Horse() : this( "um cavalo" )
 		{
 		}
 

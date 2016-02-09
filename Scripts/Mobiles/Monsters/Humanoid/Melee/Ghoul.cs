@@ -5,13 +5,13 @@ using Server.Targeting;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a ghostly corpse" )]
+    [CorpseName( "o corpo de um ghoul" )]
 	public class Ghoul : BaseCreature
 	{
 		[Constructable]
 		public Ghoul() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a ghoul";
+			Name = "um ghoul";
 			Body = 153;
 			BaseSoundID = 0x482;
 

@@ -5,13 +5,13 @@ using Server.Targeting;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a horde minion corpse" )]
+    [CorpseName( "o corpo de um servo da horda" )]
 	public class HordeMinion : BaseCreature
 	{
 		[Constructable]
 		public HordeMinion () : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a horde minion";
+			Name = "um servo da horda";
 			Body = 776;
 			BaseSoundID = 357;
 

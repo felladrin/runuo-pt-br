@@ -3,14 +3,14 @@ using Server.Mobiles;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a leopard corpse" )]
+    [CorpseName( "o corpo de um lopardo branco" )]
 	[TypeAlias( "Server.Mobiles.Snowleopard" )]
 	public class SnowLeopard : BaseCreature
 	{
 		[Constructable]
 		public SnowLeopard() : base( AIType.AI_Animal, FightMode.Aggressor, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a snow leopard";
+			Name = "um lopardo branco";
 			Body = Utility.RandomList( 64, 65 );
 			BaseSoundID = 0x73;
 

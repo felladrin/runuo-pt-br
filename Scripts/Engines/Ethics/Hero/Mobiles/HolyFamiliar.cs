@@ -5,7 +5,7 @@ using Server.Mobiles;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a holy corpse" )]
+    [CorpseName( "o corpo de um lobo prateado" )]
 	public class HolyFamiliar : BaseCreature
 	{
 		public override bool IsDispellable { get { return false; } }
@@ -15,7 +15,7 @@ namespace Server.Mobiles
 		public HolyFamiliar()
 			: base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a silver wolf";
+            Name = "um lobo prateado";
 			Body = 100;
 			BaseSoundID = 0xE5;
 

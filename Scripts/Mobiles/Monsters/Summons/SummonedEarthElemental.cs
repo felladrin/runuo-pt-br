@@ -5,7 +5,7 @@ using Server.Targeting;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "an earth elemental corpse" )]
+    [CorpseName( "o corpo de um elemental da terra" )]
 	public class SummonedEarthElemental : BaseCreature
 	{
 		public override double DispelDifficulty{ get{ return 117.5; } }
@@ -14,7 +14,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public SummonedEarthElemental() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "an earth elemental";
+            Name = "um elemental da terra";
 			Body = 14;
 			BaseSoundID = 268;
 

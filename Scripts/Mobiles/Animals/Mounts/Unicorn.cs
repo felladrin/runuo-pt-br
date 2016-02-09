@@ -5,7 +5,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a unicorn corpse" )]
+    [CorpseName( "o corpo de um unicórnio" )]
 	public class Unicorn : BaseMount
 	{
 		public override bool AllowMaleRider{ get{ return false; } }
@@ -53,7 +53,7 @@ namespace Server.Mobiles
 		}
 
 		[Constructable]
-		public Unicorn() : this( "a unicorn" )
+        public Unicorn() : this( "um unicórnio" )
 		{
 		}
 

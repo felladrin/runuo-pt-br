@@ -5,14 +5,14 @@ using Server.Targeting;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a tsuki wolf corpse" )]
+    [CorpseName( "o corpo de um lobo tsuki" )]
 	public class TsukiWolf : BaseCreature
 	{
 		[Constructable]
 		public TsukiWolf()
 			: base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a tsuki wolf";
+			Name = "um lobo tsuki";
 			Body = 250;
 
 			switch( Utility.Random( 3 ) )

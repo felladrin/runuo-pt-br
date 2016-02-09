@@ -4,7 +4,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a water elemental corpse" )]
+    [CorpseName( "o corpo de um elemental da água" )]
 	public class SummonedWaterElemental : BaseCreature
 	{
 		public override double DispelDifficulty{ get{ return 117.5; } }
@@ -13,7 +13,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public SummonedWaterElemental () : base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a water elemental";
+            Name = "um elemental da água";
 			Body = 16;
 			BaseSoundID = 278;
 

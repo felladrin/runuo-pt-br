@@ -3,7 +3,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a gargoyle corpse" )]
+    [CorpseName( "o corpo de uma gárgula" )]
 	public class GargoyleEnforcer : BaseCreature
 	{
 		public override WeaponAbility GetWeaponAbility()
@@ -14,7 +14,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public GargoyleEnforcer() : base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "Gargoyle Enforcer";
+            Name = "uma gárgula executora";
 			Body = 0x2F2;
 			BaseSoundID = 0x174;
 

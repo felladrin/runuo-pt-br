@@ -4,13 +4,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "an efreet corpse" )]
+    [CorpseName( "o corpo de um efreet" )]
 	public class Efreet : BaseCreature
 	{
 		[Constructable]
 		public Efreet () : base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "an efreet";
+            Name = "um efreet";
 			Body = 131;
 			BaseSoundID = 768;
 

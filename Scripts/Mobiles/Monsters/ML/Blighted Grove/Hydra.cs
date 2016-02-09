@@ -4,7 +4,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a hydra corpse" )]
+    [CorpseName( "o corpo de uma hidra" )]
 	public class Hydra : BaseCreature
 	{
 		[Constructable]

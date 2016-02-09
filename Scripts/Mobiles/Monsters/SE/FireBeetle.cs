@@ -4,7 +4,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a fire beetle corpse" )]
+    [CorpseName( "o corpo de um besouro de fogo" )]
 	[Server.Engines.Craft.Forge]
 	public class FireBeetle : BaseMount
 	{
@@ -14,7 +14,7 @@ namespace Server.Mobiles
 		public override bool ReduceSpeedWithDamage{ get{ return false; } }
 
 		[Constructable]
-		public FireBeetle() : base( "a fire beetle", 0xA9, 0x3E95, AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
+        public FireBeetle() : base( "um besouro de fogo", 0xA9, 0x3E95, AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
 			SetStr( 300 );
 			SetDex( 100 );

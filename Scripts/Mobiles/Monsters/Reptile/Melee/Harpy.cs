@@ -5,7 +5,7 @@ using Server.Targeting;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a harpy corpse" )]
+    [CorpseName( "o corpo de uma harpia" )]
 	public class Harpy : BaseCreature
 	{
 		[Constructable]

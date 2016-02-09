@@ -3,7 +3,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "an inhuman corpse" )]
+    [CorpseName( "o corpo de um inumano" )]
 	public class Cursed : BaseCreature
 	{
 		public override bool ClickTitle{ get{ return false; } }
@@ -12,7 +12,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public Cursed() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Title = "the Cursed";
+			Title = "o amaldiçoado";
 
 			Hue = Utility.RandomMinMax( 0x8596, 0x8599 );
 			Body = 0x190;

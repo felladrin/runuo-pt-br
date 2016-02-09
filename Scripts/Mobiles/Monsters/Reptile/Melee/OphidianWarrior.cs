@@ -5,13 +5,13 @@ using Server.Targeting;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "an ophidian corpse" )]
+    [CorpseName( "o corpo de um ophidian" )]
 	public class OphidianWarrior : BaseCreature
 	{
 		private static string[] m_Names = new string[]
 			{
-				"an ophidian warrior",
-				"an ophidian enforcer"
+                "um guerreiro ophidian",
+                "um ophidian executor"
 			};
 
 		[Constructable]

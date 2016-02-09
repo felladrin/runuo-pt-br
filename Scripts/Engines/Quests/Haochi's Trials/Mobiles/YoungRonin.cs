@@ -5,7 +5,7 @@ using Server.Items;
 
 namespace Server.Engines.Quests.Samurai
 {
-	[CorpseName( "a young ronin's corpse" )]
+    [CorpseName( "o corpo de um ronin jovem" )]
 	public class YoungRonin : BaseCreature
 	{
 		[Constructable]
@@ -16,7 +16,7 @@ namespace Server.Engines.Quests.Samurai
 
 			Hue = Utility.RandomSkinHue();
 			Body = 0x190;
-			Name = "a young ronin";
+			Name = "um ronin jovem";
 
 			Utility.AssignRandomHair( this );
 			Utility.AssignRandomFacialHair( this );

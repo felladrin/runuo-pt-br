@@ -4,13 +4,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "an elder gazer corpse" )]
+    [CorpseName( "o corpo de um gazer ancião" )]
 	public class ElderGazer : BaseCreature
 	{
 		[Constructable]
 		public ElderGazer () : base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "an elder gazer";
+			Name = "um gazer ancião";
 			Body = 22;
 			BaseSoundID = 377;
 

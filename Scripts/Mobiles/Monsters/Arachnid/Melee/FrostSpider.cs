@@ -3,13 +3,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a frost spider corpse" )]
+    [CorpseName( "o corpo de uma aranha congelante" )]
 	public class FrostSpider : BaseCreature
 	{
 		[Constructable]
 		public FrostSpider() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a frost spider";
+			Name = "uma aranha congelante";
 			Body = 20;
 			BaseSoundID = 0x388;
 

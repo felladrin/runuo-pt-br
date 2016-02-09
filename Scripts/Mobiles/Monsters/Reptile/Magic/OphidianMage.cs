@@ -4,14 +4,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "an ophidian corpse" )]
+    [CorpseName( "o corpo de um ophidian" )]
 	[TypeAlias( "Server.Mobiles.OphidianShaman" )]
 	public class OphidianMage : BaseCreature
 	{
 		private static string[] m_Names = new string[]
 			{
-				"an ophidian apprentice mage",
-				"an ophidian shaman"
+                "um aprendiz de mago ophidian",
+                "um ophidian shaman"
 			};
 
 		[Constructable]

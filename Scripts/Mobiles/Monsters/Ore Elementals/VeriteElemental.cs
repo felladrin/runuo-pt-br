@@ -4,7 +4,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "an ore elemental corpse" )]
+    [CorpseName( "o corpo de um elemental de verite" )]
 	public class VeriteElemental : BaseCreature
 	{
 		[Constructable]
@@ -15,7 +15,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public VeriteElemental( int oreAmount ) : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a verite elemental";
+            Name = "um elemental de verite";
 			Body = 113;
 			BaseSoundID = 268;
 

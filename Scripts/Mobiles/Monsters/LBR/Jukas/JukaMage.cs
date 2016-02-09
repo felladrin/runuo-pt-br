@@ -7,13 +7,13 @@ using Server.Spells;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a juka corpse" )] // Why is this 'juka' and warriors 'jukan' ? :-(
+	[CorpseName( "o corpo de um juka" )]
 	public class JukaMage : BaseCreature
 	{
 		[Constructable]
 		public JukaMage() : base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a juka mage";
+			Name = "um mago juka";
 			Body = 765;
 
 			SetStr( 201, 300 );

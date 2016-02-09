@@ -4,13 +4,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a phoenix corpse" )]
+    [CorpseName( "o corpo de uma fênix" )]
 	public class Phoenix : BaseCreature
 	{
 		[Constructable]
 		public Phoenix() : base( AIType.AI_Mage, FightMode.Aggressor, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a phoenix";
+            Name = "uma fênix";
 			Body = 5;
 			Hue = 0x674;
 			BaseSoundID = 0x8F;

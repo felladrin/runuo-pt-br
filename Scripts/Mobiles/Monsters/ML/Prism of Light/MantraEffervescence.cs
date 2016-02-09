@@ -4,14 +4,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a mantra effervescence corpse" )]
+    [CorpseName( "o corpo de um mantra de efervescência" )]
 	public class MantraEffervescence : BaseCreature
 	{
 		[Constructable]
 		public MantraEffervescence()
 			: base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a mantra effervescence";
+            Name = "um mantra de efervescência";
 			Body = 0x111;
 			BaseSoundID = 0x56E;
 

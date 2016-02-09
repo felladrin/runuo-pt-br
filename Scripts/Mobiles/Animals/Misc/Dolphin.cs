@@ -3,7 +3,7 @@ using Server.Mobiles;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a dolphin corpse" )]
+    [CorpseName( "o corpo de um golfinho" )]
 	public class Dolphin : BaseCreature
 	{
 		[Constructable]

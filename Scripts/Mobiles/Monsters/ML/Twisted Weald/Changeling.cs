@@ -11,10 +11,10 @@ using Server.Targeting;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a changeling corpse" )]
+    [CorpseName( "o corpo de uma morfolóide mariposa" )]
 	public class Changeling : BaseCreature
 	{
-		public virtual string DefaultName{ get{ return "a changeling"; } }
+        public virtual string DefaultName{ get{ return "uma morfolóide mariposa"; } }
 		public virtual int DefaultHue{ get{ return 0; } }
 
 		[Constructable]

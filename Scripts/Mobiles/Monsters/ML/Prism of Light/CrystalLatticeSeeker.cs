@@ -4,14 +4,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a Crystal Lattice Seeker corpse" )]
+    [CorpseName( "o corpo do Perseguidor da Rede de Cristais" )]
 	public class CrystalLatticeSeeker : BaseCreature
 	{
 		[Constructable]
 		public CrystalLatticeSeeker()
 			: base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "Crystal Lattice Seeker";
+			Name = "Perseguidor da Rede de Cristais";
 			Body = 0x7B;
 			Hue = 0x47E;
 

@@ -5,7 +5,7 @@ using Server.Targeting;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a Moug-Guur corpse" )]
+    [CorpseName( "o corpo de Moug-Guur" )]
 	public class MougGuur : Ettin
 	{
 		[Constructable]

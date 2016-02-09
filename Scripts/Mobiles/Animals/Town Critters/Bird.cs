@@ -4,7 +4,7 @@ using Server.Misc;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a bird corpse" )]
+	[CorpseName( "o corpo de um pássaro" )]
 	public class Bird : BaseCreature
 	{
 		[Constructable]
@@ -16,9 +16,9 @@ namespace Server.Mobiles
 
 				switch ( Utility.Random( 3 ) )
 				{
-					case 0: Name = "a crow"; break;
-					case 2: Name = "a raven"; break;
-					case 1: Name = "a magpie"; break;
+                    case 0: Name = "uma gralha"; break;
+                    case 2: Name = "um corvo"; break;
+                    case 1: Name = "uma pega"; break;
 				}
 			}
 			else
@@ -79,14 +79,14 @@ namespace Server.Mobiles
 		} 
 	}
 
-	[CorpseName( "a bird corpse" )]
+	[CorpseName( "o corpo de um pássaro" )]
 	public class TropicalBird : BaseCreature
 	{
 		[Constructable]
 		public TropicalBird() : base( AIType.AI_Animal, FightMode.Aggressor, 10, 1, 0.2, 0.4 )
 		{
 			Hue = Utility.RandomBirdHue();
-			Name = "a tropical bird";
+            Name = "um pássaro tropical";
 
 			Body = 6;
 			BaseSoundID = 0xBF;

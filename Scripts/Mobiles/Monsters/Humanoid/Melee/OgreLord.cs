@@ -6,7 +6,7 @@ using Server.Factions;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "an ogre lords corpse" )]
+    [CorpseName( "o corpo de um ogro lorde" )]
 	public class OgreLord : BaseCreature
 	{
 		public override Faction FactionAllegiance { get { return Minax.Instance; } }
@@ -15,7 +15,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public OgreLord () : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "an ogre lord";
+            Name = "um ogro lorde";
 			Body = 83;
 			BaseSoundID = 427;
 

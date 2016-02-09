@@ -4,7 +4,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a Lurg corpse" )]
+    [CorpseName( "o corpo de Lurg" )]
 	public class Lurg : Troglodyte
 	{
 		[Constructable]

@@ -5,13 +5,13 @@ using Server.Targeting;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a troll corpse" )]
+    [CorpseName( "o corpo de um troll" )]
 	public class Troll : BaseCreature
 	{
 		[Constructable]
 		public Troll () : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a troll";
+			Name = "um troll";
 			Body = Utility.RandomList( 53, 54 );
 			BaseSoundID = 461;
 

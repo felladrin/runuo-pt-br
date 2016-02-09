@@ -6,7 +6,7 @@ using Server.Targeting;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "an orcish corpse" )]
+	[CorpseName( "o corpo de um orc" )]
 	public class OrcishLord : BaseCreature
 	{
 		public override InhumanSpeech SpeechType{ get{ return InhumanSpeech.Orc; } }
@@ -14,7 +14,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public OrcishLord() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "an orcish lord";
+            Name = "um lorde orc";
 			Body = 138;
 			BaseSoundID = 0x45A;
 

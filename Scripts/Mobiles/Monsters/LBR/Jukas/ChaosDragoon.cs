@@ -5,13 +5,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a chaos dragoon corpse" )]
+    [CorpseName( "o corpo de um dragão do caos" )]
 	public class ChaosDragoon : BaseCreature
 	{
 		[Constructable]
 		public ChaosDragoon() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.15, 0.4 )
 		{
-			Name = "a chaos dragoon";
+            Name = "um dragão do caos";
 			Body = 0x190;
 			Hue = Utility.RandomSkinHue();
 

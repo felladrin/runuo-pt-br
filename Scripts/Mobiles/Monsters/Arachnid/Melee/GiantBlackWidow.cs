@@ -5,13 +5,13 @@ using System.Collections;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a giant black widow spider corpse" )] // stupid corpse name
+    [CorpseName( "o corpo de uma viúva negra gigante" )] // stupid corpse name
 	public class GiantBlackWidow : BaseCreature
 	{
 		[Constructable]
 		public GiantBlackWidow() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a giant black widow";
+            Name = "uma viúva negra gigante";
 			Body =  0x9D;
 			BaseSoundID = 0x388; // TODO: validate
 

@@ -5,13 +5,13 @@ using Server.Targeting;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a rotting corpse" )]
+    [CorpseName( "o corpo de um zumbi" )]
 	public class Zombie : BaseCreature
 	{
 		[Constructable]
 		public Zombie() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a zombie";
+            Name = "um zumbi";
 			Body = 3;
 			BaseSoundID = 471;
 

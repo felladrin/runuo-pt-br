@@ -5,7 +5,7 @@ using Server.Network;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a solen queen corpse" )]
+    [CorpseName( "o corpo de uma solen vermelha rainha" )]
 	public class RedSolenQueen : BaseCreature
 	{
 		private bool m_BurstSac;
@@ -14,7 +14,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public RedSolenQueen() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a red solen queen";
+            Name = "uma solen vermelha rainha";
 			Body = 783;
 			BaseSoundID = 959;
 

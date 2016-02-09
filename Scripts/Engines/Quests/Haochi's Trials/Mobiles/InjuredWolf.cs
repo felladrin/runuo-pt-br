@@ -3,14 +3,14 @@ using Server.Mobiles;
 
 namespace Server.Engines.Quests.Samurai
 {
-	[CorpseName( "an injured wolf corpse" )]
+    [CorpseName( "o corpo de um lobo ferido" )]
 	public class InjuredWolf : BaseCreature
 	{
 		[Constructable]
 		public InjuredWolf() : base( AIType.AI_Animal, FightMode.Aggressor, 10, 1, 0.2, 0.4 )
 		{
 			Body = 0xE1;
-			Name = "an injured wolf";
+            Name = "um lobo ferido";
 			BaseSoundID = 0xE5;
 
 			Hue = Utility.RandomAnimalHue();

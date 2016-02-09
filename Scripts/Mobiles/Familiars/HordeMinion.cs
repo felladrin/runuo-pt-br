@@ -9,14 +9,14 @@ using Server.ContextMenus;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a horde minion corpse" )]
+    [CorpseName( "o corpo de um servo da horda" )]
 	public class HordeMinionFamiliar : BaseFamiliar
 	{
 		public override bool DisplayWeight{ get { return true; } }
 
 		public HordeMinionFamiliar()
 		{
-			Name = "a horde minion";
+			Name = "um servo da horda";
 			Body = 776;
 			BaseSoundID = 0x39D;
 

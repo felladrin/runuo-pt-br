@@ -3,14 +3,14 @@ using Server.Mobiles;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "an ice snake corpse" )]
+    [CorpseName( "o corpo de uma cobra de gelo" )]
 	[TypeAlias( "Server.Mobiles.Icesnake" )]
 	public class IceSnake : BaseCreature
 	{
 		[Constructable]
 		public IceSnake() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "an ice snake";
+            Name = "uma cobra de gelo";
 			Body = 52;
 			Hue = 0x480;
 			BaseSoundID = 0xDB;

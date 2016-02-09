@@ -5,7 +5,7 @@ using Server.Items;
 namespace Server.Mobiles
 {
 	[TypeAlias( "Server.Mobiles.Yamadon" )]
-	[CorpseName( "a yamandon corpse" )]
+    [CorpseName( "o corpo de um yamandon" )]
 	public class Yamandon : BaseCreature
 	{
 		public override WeaponAbility GetWeaponAbility()
@@ -16,7 +16,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public Yamandon() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a yamandon";
+			Name = "um yamandon";
 			Body = 249;
 
 			SetStr( 786, 930 );

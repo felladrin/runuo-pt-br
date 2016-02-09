@@ -4,13 +4,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a maggoty corpse" )] // TODO: Corpse name?
+    [CorpseName( "um monte de vermes mortos" )]
 	public class MoundOfMaggots : BaseCreature
 	{
 		[Constructable]
 		public MoundOfMaggots() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a mound of maggots";
+            Name = "um monte de vermes";
 			Body = 319;
 			BaseSoundID = 898;
 

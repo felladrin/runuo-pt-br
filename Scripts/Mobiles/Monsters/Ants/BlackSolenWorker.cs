@@ -5,13 +5,13 @@ using Server.Targeting;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a solen worker corpse" )]
+    [CorpseName( "o corpo de uma solen preta trabalhadora" )]
 	public class BlackSolenWorker : BaseCreature
 	{
 		[Constructable]
 		public BlackSolenWorker() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a black solen worker";
+            Name = "uma solen preta trabalhadora";
 			Body = 805;
 			BaseSoundID = 959;
 			Hue = 0x453;

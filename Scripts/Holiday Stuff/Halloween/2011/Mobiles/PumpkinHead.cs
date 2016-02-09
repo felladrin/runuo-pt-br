@@ -6,7 +6,7 @@ using Server.Mobiles;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a killer pumpkin corpse" )]
+    [CorpseName( "o corpo de um cabeça-de-abóbora" )]
 	public class PumpkinHead : BaseCreature
 	{
 		public override bool AutoDispel { get { return true; } }
@@ -18,7 +18,7 @@ namespace Server.Mobiles
 		public PumpkinHead()
 			: base( Utility.RandomBool() ? AIType.AI_Melee : AIType.AI_Mage, FightMode.Closest, 10, 1, 0.05, 0.1 )
 		{
-			Name = "a killer pumpkin";
+            Name = "um cabeça-de-abóbora";
 			Body = 1246 + Utility.Random( 2 );
 
 			BaseSoundID = 268;

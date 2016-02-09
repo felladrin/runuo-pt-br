@@ -5,7 +5,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a kaze kemono corpse" )]
+    [CorpseName( "o corpo de um kaze kemono" )]
 	public class KazeKemono : BaseCreature
 	{
 
@@ -13,7 +13,7 @@ namespace Server.Mobiles
 		public KazeKemono()
 			: base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a kaze kemono";
+			Name = "um kaze kemono";
 			Body = 196;
 			BaseSoundID = 655;
 

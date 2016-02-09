@@ -6,7 +6,7 @@ using Server.Misc;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a minotaur corpse" )]
+    [CorpseName( "o corpo de um minotauro batedor" )]
 	public class MinotaurScout : BaseCreature
 	{
 		public override WeaponAbility GetWeaponAbility()
@@ -17,7 +17,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public MinotaurScout() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 ) // NEED TO CHECK
 		{
-			Name = "a minotaur scout";
+            Name = "um minotauro batedor";
 			Body = 281;
 		   
 			SetStr( 353, 375 );

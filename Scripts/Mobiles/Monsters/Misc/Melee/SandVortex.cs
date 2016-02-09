@@ -4,13 +4,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a sand vortex corpse" )]
+    [CorpseName( "o corpo de um vórtice de areia" )]
 	public class SandVortex : BaseCreature
 	{
 		[Constructable]
 		public SandVortex() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a sand vortex";
+            Name = "um vórtice de areia";
 			Body = 790;
 			BaseSoundID = 263;
 

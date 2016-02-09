@@ -4,13 +4,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a gore fiend corpse" )]
+    [CorpseName( "o corpo de um demõnio de sangue" )]
 	public class GoreFiend : BaseCreature
 	{
 		[Constructable]
 		public GoreFiend() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a gore fiend";
+			Name = "um demõnio de sangue";
 			Body = 305;
 			BaseSoundID = 224;
 

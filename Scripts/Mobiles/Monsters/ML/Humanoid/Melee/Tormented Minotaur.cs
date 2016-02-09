@@ -3,7 +3,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a tormented minotaur corpse" )]
+    [CorpseName( "o corpo de uma minotauro atormentada" )]
 	public class TormentedMinotaur : BaseCreature
 	{
 		public override WeaponAbility GetWeaponAbility()
@@ -14,7 +14,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public TormentedMinotaur() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "Tormented Minotaur";
+			Name = "uma minotauro atormentada";
 			Body = 262;
 
 			SetStr( 822, 930 );

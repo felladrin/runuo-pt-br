@@ -4,7 +4,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a dragon corpse" )]
+    [CorpseName( "o corpo de um dragão superior" )]
 	public class GreaterDragon : BaseCreature
 	{
 		public override bool StatLossAfterTame { get { return true; } }
@@ -12,7 +12,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public GreaterDragon () : base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.3, 0.5 )
 		{
-			Name = "a greater dragon";
+			Name = "um dragão superior";
 			Body = Utility.RandomList( 12, 59 );
 			BaseSoundID = 362;
 

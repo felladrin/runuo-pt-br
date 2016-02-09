@@ -4,13 +4,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a crystal sea serpent corpse" )]
+    [CorpseName( "o corpo de uma serpente marinha de cristal" )]
 	public class CrystalSeaSerpent : SeaSerpent
 	{
 		[Constructable]
 		public CrystalSeaSerpent()
 		{
-			Name = "a crystal sea serpent";
+            Name = "uma serpente marinha de cristal";
 			Hue = 0x47E;
 
 			SetStr( 250, 450 );

@@ -4,7 +4,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a flesh golem corpse" )]
+    [CorpseName( "o corpo de um golem de carne" )]
 	public class FleshGolem : BaseCreature
 	{
 		public override WeaponAbility GetWeaponAbility()
@@ -15,7 +15,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public FleshGolem() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a flesh golem";
+            Name = "um golem de carne";
 			Body = 304;
 			BaseSoundID = 684;
 

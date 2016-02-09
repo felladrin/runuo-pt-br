@@ -5,7 +5,7 @@ using Server.Network;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "an overseer's corpse" )]
+    [CorpseName( "o corpo de um capataz de exodus" )]
 	public class ExodusOverseer : BaseCreature
 	{
 		private bool m_FieldActive;
@@ -18,7 +18,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public ExodusOverseer() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "exodus overseer";
+			Name = "um capataz de exodus";
 			Body = 0x2F4;
 
 			SetStr( 561, 650 );

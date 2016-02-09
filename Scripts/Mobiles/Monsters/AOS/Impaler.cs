@@ -4,7 +4,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "an impaler corpse" )]
+    [CorpseName( "o corpo de um impalador" )]
 	public class Impaler : BaseCreature
 	{
 		public override WeaponAbility GetWeaponAbility()

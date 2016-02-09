@@ -4,13 +4,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "an ophidian corpse" )]
+    [CorpseName( "o corpo de uma matriarca ophidian" )]
 	public class OphidianMatriarch : BaseCreature
 	{
 		[Constructable]
 		public OphidianMatriarch() : base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "an ophidian matriarch";
+            Name = "uma matriarca ophidian";
 			Body = 87;
 			BaseSoundID = 644;
 

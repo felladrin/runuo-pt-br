@@ -5,13 +5,13 @@ using Server.Targeting;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a skeletal corpse" )]
+    [CorpseName( "o corpo de um cavaleiro descarnado" )]
 	public class BoneKnight : BaseCreature
 	{
 		[Constructable]
 		public BoneKnight() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a bone knight";
+            Name = "um cavaleiro descarnado";
 			Body = 57;
 			BaseSoundID = 451;
 

@@ -5,7 +5,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a glowing orc corpse" )]
+    [CorpseName( "o corpo de um orc mago" )]
 	public class OrcishMage : BaseCreature
 	{
 		public override InhumanSpeech SpeechType{ get{ return InhumanSpeech.Orc; } }
@@ -13,7 +13,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public OrcishMage () : base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "an orcish mage";
+            Name = "um orc mago";
 			Body = 140;
 			BaseSoundID = 0x45A;
 

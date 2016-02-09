@@ -5,7 +5,7 @@ using Server.Gumps;
 
 namespace Server.Mobiles 
 { 
-	[CorpseName( "an ethereal warrior corpse" )] 
+    [CorpseName( "o corpo de um guerreiro etéreo" )] 
 	public class EtherealWarrior : BaseCreature 
 	{ 
 		public override bool InitialInnocent{ get{ return true; } }

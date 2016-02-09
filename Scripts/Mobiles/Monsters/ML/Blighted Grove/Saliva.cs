@@ -4,7 +4,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a Saliva corpse" )]
+    [CorpseName( "o corpo de Saliva" )]
 	public class Saliva : Harpy
 	{
 		[Constructable]

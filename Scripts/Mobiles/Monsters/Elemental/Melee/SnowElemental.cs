@@ -3,13 +3,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a snow elemental corpse" )]
+    [CorpseName( "o corpo de um elemental da neve" )]
 	public class SnowElemental : BaseCreature
 	{
 		[Constructable]
 		public SnowElemental() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a snow elemental";
+            Name = "um elemental da neve";
 			Body = 163;
 			BaseSoundID = 263;
 

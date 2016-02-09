@@ -3,14 +3,14 @@ using Server.Mobiles;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a hell cat corpse" )]
+    [CorpseName( "o corpo de um gato infernal" )]
 	[TypeAlias( "Server.Mobiles.Preditorhellcat" )]
 	public class PredatorHellCat : BaseCreature
 	{
 		[Constructable]
 		public PredatorHellCat() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a hell cat";
+            Name = "um gato infernal predador";
 			Body = 127;
 			BaseSoundID = 0xBA;
 

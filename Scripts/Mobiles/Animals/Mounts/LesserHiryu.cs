@@ -5,7 +5,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a hiryu corpse" )]
+    [CorpseName( "o corpo de um hiryu" )]
 	public class LesserHiryu : BaseMount
 	{
 		public override double WeaponAbilityChance { get { return 0.07; } } /* 1 in 15 chance of using; 1 in 5 chance of success */
@@ -49,7 +49,7 @@ namespace Server.Mobiles
 
 		[Constructable]
 		public LesserHiryu()
-			: base( "a lesser hiryu", 243, 0x3E94, AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
+            : base( "um hiryu menor", 243, 0x3E94, AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
 			Hue = GetHue();
 

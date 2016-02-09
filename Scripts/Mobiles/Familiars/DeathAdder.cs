@@ -3,12 +3,12 @@ using Server;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a death adder corpse" )]
+    [CorpseName( "o corpo de uma cobra da morte" )]
 	public class DeathAdder : BaseFamiliar
 	{
 		public DeathAdder()
 		{
-			Name = "a death adder";
+			Name = "uma cobra da morte";
 			Body = 0x15;
 			Hue = 0x455;
 			BaseSoundID = 219;

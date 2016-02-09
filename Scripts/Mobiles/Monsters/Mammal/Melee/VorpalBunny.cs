@@ -4,13 +4,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a vorpal bunny corpse" )]
+    [CorpseName( "o corpo de um coelho vorpal" )]
 	public class VorpalBunny : BaseCreature
 	{
 		[Constructable]
 		public VorpalBunny() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a vorpal bunny";
+            Name = "um coelho vorpal";
 			Body = 205;
 			Hue = 0x480;
 

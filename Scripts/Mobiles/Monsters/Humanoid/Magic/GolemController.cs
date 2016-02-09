@@ -4,14 +4,14 @@ using Server.Items;
 
 namespace Server.Mobiles 
 { 
-	[CorpseName( "a golem controller corpse" )] 
+    [CorpseName( "o corpo de um controlador de golens" )] 
 	public class GolemController : BaseCreature 
 	{ 
 		[Constructable] 
 		public GolemController() : base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 ) 
 		{ 
 			Name = NameList.RandomName( "golem controller" );
-			Title = "the controller";
+            Title = "o controlador";
 
 			Body = 400;
 			Hue = 0x455;

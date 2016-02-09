@@ -4,7 +4,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a charred corpse" )]
+    [CorpseName( "um cadáver carbonizado" )]
 	public class FireGargoyle : BaseCreature
 	{
 		[Constructable]

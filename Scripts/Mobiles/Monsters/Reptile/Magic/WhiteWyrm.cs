@@ -4,14 +4,14 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a white wyrm corpse" )]
+    [CorpseName( "o corpo de um wyrm branco" )]
 	public class WhiteWyrm : BaseCreature
 	{
 		[Constructable]
 		public WhiteWyrm() : base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
 			Body = Utility.RandomBool() ? 180 : 49;
-			Name = "a white wyrm";
+			Name = "um wyrm branco";
 			BaseSoundID = 362;
 
 			SetStr( 721, 760 );

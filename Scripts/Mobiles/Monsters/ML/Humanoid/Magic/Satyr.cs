@@ -3,13 +3,13 @@ using System.Collections.Generic;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a satyr's corpse" )]
+    [CorpseName( "o corpo de um sátiro" )]
 	public class Satyr : BaseCreature
 	{
 		[Constructable]
 		public Satyr() : base( AIType.AI_Animal, FightMode.Aggressor, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a satyr";
+            Name = "um sátiro";
 			Body = 271;
 			BaseSoundID = 0x586;
 

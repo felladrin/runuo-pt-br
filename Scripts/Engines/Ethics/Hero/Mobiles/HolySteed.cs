@@ -5,7 +5,7 @@ using Server.Mobiles;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a holy corpse" )]
+    [CorpseName( "o corpo de um corcel prateado" )]
 	public class HolySteed : BaseMount
 	{
 		public override bool IsDispellable { get{ return false; } }
@@ -16,7 +16,7 @@ namespace Server.Mobiles
 
 		[Constructable]
 		public HolySteed()
-			: base( "a silver steed", 0x75, 0x3EA8, AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4 )
+            : base( "um corcel prateado", 0x75, 0x3EA8, AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4 )
 		{
 			SetStr( 496, 525 );
 			SetDex( 86, 105 );

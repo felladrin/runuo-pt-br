@@ -6,7 +6,7 @@ using Server.Misc;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "an orcish corpse" )]
+    [CorpseName( "o corpo de um orc brutamontes" )]
 	public class OrcBrute : BaseCreature
 	{
 		[Constructable]
@@ -14,7 +14,7 @@ namespace Server.Mobiles
 		{
 			Body = 189;
 
-			Name = "an orc brute";
+            Name = "um orc brutamontes";
 			BaseSoundID = 0x45A;
 
 			SetStr( 767, 945 );

@@ -4,7 +4,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "an ice elemental corpse" )]
+    [CorpseName( "o corpo de um elemental de gelo" )]
 	public class IceElemental : BaseCreature
 	{
 		[Constructable]

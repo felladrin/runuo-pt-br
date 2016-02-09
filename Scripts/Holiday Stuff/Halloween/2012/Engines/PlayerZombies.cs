@@ -152,7 +152,7 @@ namespace Server.Engines.Events
 		public PlayerBones( String name )
 			: base( Utility.RandomMinMax( 0x0ECA, 0x0ED2 ) )
 		{
-			Name = String.Format( "{0}'s bones", name );
+			Name = String.Format( "Ossos de {0}", name );
 
 			switch( Utility.Random( 10 ) )
 			{
@@ -181,10 +181,10 @@ namespace Server.Engines.Events
 		}
 	}
 
-	[CorpseName( "a rotting corpse" )]
+	[CorpseName( "um cadáver apodrecido" )]
 	public class ZombieSkeleton : BaseCreature
 	{
-		private static readonly string m_Name = "Zombie Skeleton";
+		private static readonly string m_Name = "Zumbi Descarnado";
 
 		private PlayerMobile m_DeadPlayer;
 

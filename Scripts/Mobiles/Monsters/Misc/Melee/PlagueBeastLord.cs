@@ -4,7 +4,7 @@ using Server.Network;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a plague beast lord corpse" )]
+    [CorpseName( "o corpo de um monstro da praga soberano" )]
 	public class PlagueBeastLord : BaseCreature, ICarvable, IScissorable
 	{
 		public override Poison PoisonImmune { get { return Poison.Lethal; } }
@@ -45,7 +45,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public PlagueBeastLord() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a plague beast lord";
+            Name = "um monstro da praga soberano";
 			Body = 775;
 			BaseSoundID = 679;
 			SpeechHue = 0x3B2;

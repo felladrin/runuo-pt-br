@@ -5,13 +5,13 @@ using Server.Targeting;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a mongbat corpse" )]
+    [CorpseName( "o corpo de um grande macacorcego" )]
 	public class GreaterMongbat : BaseCreature
 	{
 		[Constructable]
 		public GreaterMongbat() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a greater mongbat";
+			Name = "um grande macacorcego";
 			Body = 39;
 			BaseSoundID = 422;
 

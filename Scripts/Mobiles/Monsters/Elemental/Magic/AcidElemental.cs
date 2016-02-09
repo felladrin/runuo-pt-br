@@ -5,13 +5,13 @@ using Server.Items;
 namespace Server.Mobiles
 {
 	[TypeAlias( "Server.Mobiles.ToxicElemental" )]
-	[CorpseName( "an acid elemental corpse" )]
+    [CorpseName( "o corpo de um elemental de ácido" )]
 	public class AcidElemental : BaseCreature
 	{
 		[Constructable]
 		public AcidElemental () : base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "an acid elemental";
+            Name = "um elemental de ácido";
 			Body = 0x9E;
 			BaseSoundID = 278;
 

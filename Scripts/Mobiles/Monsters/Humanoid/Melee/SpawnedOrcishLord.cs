@@ -5,7 +5,7 @@ using Server.Targeting;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "an orcish corpse" )]
+	[CorpseName( "o corpo de um orc" )]
 	public class SpawnedOrcishLord : OrcishLord
 	{
 		[Constructable]

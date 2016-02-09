@@ -6,7 +6,7 @@ using Server.Network;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a juggernaut corpse" )]
+    [CorpseName( "o corpo de um colosso de blackthorn" )]
 	public class Juggernaut : BaseCreature
 	{
 		private bool m_Stunning;
@@ -14,7 +14,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public Juggernaut() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.3, 0.6 )
 		{
-			Name = "a blackthorn juggernaut";
+			Name = "um colosso de blackthorn";
 			Body = 768;
 
 

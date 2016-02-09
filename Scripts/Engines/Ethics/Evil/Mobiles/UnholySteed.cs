@@ -5,7 +5,7 @@ using Server.Ethics;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "an unholy corpse" )]
+    [CorpseName( "o corpo de um corcel negro" )]
 	public class UnholySteed : BaseMount
 	{
 		public override bool IsDispellable { get { return false; } }
@@ -16,7 +16,7 @@ namespace Server.Mobiles
 
 		[Constructable]
 		public UnholySteed()
-			: base( "a dark steed", 0x74, 0x3EA7, AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4 )
+            : base( "um corcel negro", 0x74, 0x3EA7, AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4 )
 		{
 			SetStr( 496, 525 );
 			SetDex( 86, 105 );

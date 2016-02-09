@@ -7,12 +7,12 @@ using Server.Network;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a dark wolf corpse" )]
+    [CorpseName( "o corpo de um lobo negro" )]
 	public class DarkWolfFamiliar : BaseFamiliar
 	{
 		public DarkWolfFamiliar()
 		{
-			Name = "a dark wolf";
+            Name = "um lobo negro";
 			Body = 99;
 			Hue = 0x901;
 			BaseSoundID = 0xE5;

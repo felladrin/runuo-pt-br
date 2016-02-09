@@ -4,7 +4,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a darknight creeper corpse" )]
+	[CorpseName( "o corpo de um rastejador da escuridão" )]
 	public class DarknightCreeper : BaseCreature
 	{
 		public override bool IgnoreYoungProtection { get { return Core.ML; } }

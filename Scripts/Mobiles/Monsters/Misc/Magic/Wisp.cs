@@ -6,7 +6,7 @@ using Server.Factions;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a wisp corpse" )]
+    [CorpseName( "o corpo de um wisp" )]
 	public class Wisp : BaseCreature
 	{
 		public override InhumanSpeech SpeechType{ get{ return InhumanSpeech.Wisp; } }
@@ -19,7 +19,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public Wisp() : base( AIType.AI_Mage, FightMode.Aggressor, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a wisp";
+            Name = "um wisp";
 			Body = 58;
 			BaseSoundID = 466;
 

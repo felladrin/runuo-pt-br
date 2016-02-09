@@ -4,7 +4,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "an insane dryad corpse" )]
+    [CorpseName( "o corpo de uma dríade insana" )]
 	public class InsaneDryad : MLDryad
 	{
 		public override bool InitialInnocent { get { return false; } }
@@ -12,7 +12,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public InsaneDryad()
 		{
-			Name = "an insane dryad";
+            Name = "uma dríade insana";
 
 			// TODO: Perhaps these should have negative karma?
 		}

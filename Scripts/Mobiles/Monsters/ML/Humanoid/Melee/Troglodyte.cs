@@ -6,13 +6,13 @@ using Server.Misc;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a troglodyte corpse" )]
+    [CorpseName( "o corpo de um troglodita" )]
 	public class Troglodyte : BaseCreature
 	{
 		[Constructable]
 		public Troglodyte() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 ) // NEED TO CHECK
 		{
-			Name = "a troglodyte";
+            Name = "um troglodita";
 			Body = 267;
 			BaseSoundID = 0x59F; 
 

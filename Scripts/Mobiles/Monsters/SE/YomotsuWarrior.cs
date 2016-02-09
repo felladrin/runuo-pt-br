@@ -5,7 +5,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a yomotsu corpse" )]
+    [CorpseName( "o corpo de um guerreiro yomotsu" )]
 	public class YomotsuWarrior : BaseCreature
 	{
 		public override WeaponAbility GetWeaponAbility()
@@ -16,7 +16,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public YomotsuWarrior() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a yomotsu warrior";
+            Name = "um guerreiro yomotsu";
 			Body = 245;
 			BaseSoundID = 0x452;
 

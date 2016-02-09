@@ -5,11 +5,11 @@ using Server.Mobiles;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a nightmare corpse" )]
+    [CorpseName( "o corpo de um pesadelo" )]
 	public class Nightmare : BaseMount
 	{
 		[Constructable]
-		public Nightmare() : this( "a nightmare" )
+        public Nightmare() : this( "um pesadelo" )
 		{
 		}
 

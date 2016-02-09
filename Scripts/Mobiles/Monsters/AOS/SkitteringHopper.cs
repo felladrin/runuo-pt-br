@@ -4,13 +4,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a skittering hopper corpse" )]
+    [CorpseName( "o corpo de uma pulga deslizante" )]
 	public class SkitteringHopper : BaseCreature
 	{
 		[Constructable]
 		public SkitteringHopper() : base( AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a skittering hopper";
+            Name = "uma pulga deslizante";
 			Body = 302;
 			BaseSoundID = 959;
 

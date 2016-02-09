@@ -4,7 +4,7 @@ using Server.Mobiles;
 
 namespace Server.Factions
 {
-	[CorpseName( "a war horse corpse" )]
+    [CorpseName( "o corpo de um cavalo de guerra" )]
 	public class FactionWarHorse : BaseMount
 	{
 		private Faction m_Faction;
@@ -30,7 +30,7 @@ namespace Server.Factions
 		{
 		}
 
-		public FactionWarHorse( Faction faction ) : base( "a war horse", 0xE2, 0x3EA0, AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4 )
+        public FactionWarHorse( Faction faction ) : base( "um cavalo de guerra", 0xE2, 0x3EA0, AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4 )
 		{
 			BaseSoundID = 0xA8;
 

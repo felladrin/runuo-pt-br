@@ -5,7 +5,7 @@ using System.Collections;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a Lady Lissith corpse" )]
+    [CorpseName( "o corpo de Lady Lissith" )]
 	public class LadyLissith : GiantBlackWidow
 	{
 		[Constructable]

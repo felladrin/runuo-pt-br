@@ -4,13 +4,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "an enslaved satyr corpse" )]
+    [CorpseName( "o corpo de um sátiro escravo" )]
 	public class EnslavedSatyr : Satyr
 	{
 		[Constructable]
 		public EnslavedSatyr()
 		{
-			Name = "an enslaved satyr";
+            Name = "um sátiro escravo";
 		}
 
 		/*

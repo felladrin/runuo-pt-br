@@ -4,7 +4,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "an air elemental corpse" )]
+    [CorpseName( "o corpo de um elemental do ar" )]
 	public class AirElemental : BaseCreature
 	{
 		public override double DispelDifficulty{ get{ return 117.5; } }
@@ -13,7 +13,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public AirElemental () : base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "an air elemental";
+            Name = "um elemental do ar";
 			Body = 13;
 			Hue = 0x4001;
 			BaseSoundID = 655;

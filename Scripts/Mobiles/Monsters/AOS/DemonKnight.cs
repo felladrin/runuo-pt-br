@@ -6,7 +6,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a demon knight corpse" )]
+    [CorpseName( "o corpo de um cavaleiro demônio" )]
 	public class DemonKnight : BaseCreature
 	{
 		public override bool IgnoreYoungProtection { get { return Core.ML; } }
@@ -166,7 +166,7 @@ namespace Server.Mobiles
 		public DemonKnight() : base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
 			Name = NameList.RandomName( "demon knight" );
-			Title = "the Dark Father";
+            Title = "o pai das trevas";
 			Body = 318;
 			BaseSoundID = 0x165;
 

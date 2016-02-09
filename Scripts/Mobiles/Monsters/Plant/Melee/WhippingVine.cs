@@ -3,13 +3,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a whipping vine corpse" )]
+    [CorpseName( "o corpo de uma videira-chicote" )]
 	public class WhippingVine : BaseCreature
 	{
 		[Constructable]
 		public WhippingVine() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a whipping vine";
+            Name = "uma videira-chicote";
 			Body = 8;
 			Hue = 0x851;
 			BaseSoundID = 352;

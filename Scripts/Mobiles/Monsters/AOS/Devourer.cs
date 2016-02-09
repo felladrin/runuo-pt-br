@@ -4,13 +4,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a devourer of souls corpse" )]
+    [CorpseName( "o corpo de um devorador de almas" )]
 	public class Devourer : BaseCreature
 	{
 		[Constructable]
 		public Devourer() : base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a devourer of souls";
+            Name = "um devorador de almas";
 			Body = 303;
 			BaseSoundID = 357;
 

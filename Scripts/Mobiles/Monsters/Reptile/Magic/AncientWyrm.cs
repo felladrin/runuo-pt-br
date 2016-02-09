@@ -4,13 +4,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a dragon corpse" )]
+    [CorpseName( "o corpo de um wyrm ancião" )]
 	public class AncientWyrm : BaseCreature
 	{
 		[Constructable]
 		public AncientWyrm () : base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "an ancient wyrm";
+			Name = "um wyrm ancião";
 			Body = 46;
 			BaseSoundID = 362;
 

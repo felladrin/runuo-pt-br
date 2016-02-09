@@ -5,13 +5,13 @@ using Server.Targeting;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "an oni corpse" )]
+    [CorpseName( "o corpo de um oni" )]
 	public class Oni : BaseCreature
 	{
 		[Constructable]
 		public Oni() : base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "an oni";
+            Name = "um oni";
 			Body = 241;
 
 			SetStr( 801, 910 );

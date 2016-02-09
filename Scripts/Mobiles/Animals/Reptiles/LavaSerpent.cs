@@ -5,14 +5,14 @@ using Server.Mobiles;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a lava serpent corpse" )]
+    [CorpseName( "o corpo de uma serpente de lava" )]
 	[TypeAlias( "Server.Mobiles.Lavaserpant" )]
 	public class LavaSerpent : BaseCreature
 	{
 		[Constructable]
 		public LavaSerpent() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a lava serpent";
+            Name = "uma serpente de lava";
 			Body = 90;
 			BaseSoundID = 219;
 

@@ -5,13 +5,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a rai-ju corpse" )]
+    [CorpseName( "o corpo de um rai-ju" )]
 	public class RaiJu : BaseCreature
 	{
 		[Constructable]
 		public RaiJu() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a Rai-Ju";
+			Name = "um rai-ju";
 			Body = 199;
 			BaseSoundID = 0x346;
 

@@ -7,13 +7,13 @@ using Server.ContextMenus;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a horse corpse" )]
+    [CorpseName( "o corpo de um cavalo de carga" )]
 	public class PackHorse : BaseCreature
 	{
 		[Constructable]
 		public PackHorse() : base( AIType.AI_Animal, FightMode.Aggressor, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a pack horse";
+            Name = "um cavalo de carga";
 			Body = 291;
 			BaseSoundID = 0xA8;
 

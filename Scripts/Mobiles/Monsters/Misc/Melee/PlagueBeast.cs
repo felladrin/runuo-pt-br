@@ -6,7 +6,7 @@ using Server.Network;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a plague beast corpse" )]
+	[CorpseName( "o corpo de um monstro da praga" )]
 	public class PlagueBeast : BaseCreature, IDevourer
 	{
 		private int m_DevourTotal;
@@ -36,7 +36,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public PlagueBeast() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a plague beast";
+            Name = "um monstro da praga";
 			Body = 775;
 
 			SetStr( 302, 500 );

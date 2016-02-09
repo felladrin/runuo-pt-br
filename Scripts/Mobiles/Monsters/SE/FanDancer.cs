@@ -6,13 +6,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a fan dancer corpse" )]
+    [CorpseName( "o corpo de um dançarino do vento" )]
 	public class FanDancer : BaseCreature
 	{
 		[Constructable]
 		public FanDancer() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a fan dancer";
+            Name = Female ? "uma dançarina do vento" : "um dançarino do vento";
 			Body = 247;
 			BaseSoundID = 0x372;
 

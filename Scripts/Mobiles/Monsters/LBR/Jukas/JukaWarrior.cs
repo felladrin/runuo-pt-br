@@ -6,13 +6,13 @@ using Server.Misc;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a jukan corpse" )]
+    [CorpseName( "o corpo de um juka" )]
 	public class JukaWarrior : BaseCreature
 	{
 		[Constructable]
 		public JukaWarrior() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a juka warrior";
+			Name = "um guerreiro juka";
 			Body = 764;
 
 			SetStr( 251, 350 );

@@ -4,7 +4,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a shadow knight corpse" )]
+    [CorpseName( "o corpo de um cavaleiro das sombras" )]
 	public class ShadowKnight : BaseCreature
 	{
 		public override WeaponAbility GetWeaponAbility()
@@ -18,7 +18,7 @@ namespace Server.Mobiles
 		public ShadowKnight() : base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
 			Name = NameList.RandomName( "shadow knight" );
-			Title = "the Shadow Knight";
+            Title = "o cavaleiro das sombras";
 			Body = 311;
 
 			SetStr( 250 );

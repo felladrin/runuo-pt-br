@@ -4,7 +4,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a treefellow corpse" )]
+    [CorpseName( "o corpo de uma árvore-viva" )]
 	public class Treefellow : BaseCreature
 	{
 		public override WeaponAbility GetWeaponAbility()
@@ -15,7 +15,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public Treefellow() : base( AIType.AI_Melee, FightMode.Evil, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a treefellow";
+            Name = "uma árvore-viva";
 			Body = 301;
 
 			SetStr( 196, 220 );

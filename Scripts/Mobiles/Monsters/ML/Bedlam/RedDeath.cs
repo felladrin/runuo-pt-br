@@ -4,12 +4,12 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a Red Death corpse" )]
+    [CorpseName( "o corpo de Morte Vermelha" )]
 	public class RedDeath : SkeletalMount
 	{
 		[Constructable]
 		public RedDeath()
-			: base( "Red Death" )
+            : base( "Morte Vermelha" )
 		{
 			IsParagon = true;
 

@@ -4,7 +4,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a Coil corpse" )]
+    [CorpseName( "o corpo de Coil" )]
 	public class Coil : SilverSerpent
 	{
 		// TODO: Check faction allegiance

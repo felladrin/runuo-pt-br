@@ -3,7 +3,7 @@ using Server;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a giant ice worm corpse" )]
+    [CorpseName( "o corpo de uma minhoca de gelo gigante" )]
 	public class GiantIceWorm : BaseCreature
 	{
 		public override bool SubdueBeforeTame { get { return true; } }
@@ -12,7 +12,7 @@ namespace Server.Mobiles
 		public GiantIceWorm() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
 			Body = 89;
-			Name = "a giant ice worm";
+            Name = "uma minhoca de gelo gigante";
 			BaseSoundID = 0xDC;
 
 			SetStr( 216, 245 );

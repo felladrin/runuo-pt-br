@@ -3,13 +3,13 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a quagmire corpse" )]
+    [CorpseName( "o corpo de um atoleiro" )]
 	public class Quagmire : BaseCreature
 	{
 		[Constructable]
 		public Quagmire() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.4, 0.8 )
 		{
-			Name = "a quagmire";
+            Name = "um atoleiro";
 			Body = 789;
 			BaseSoundID = 352;
 

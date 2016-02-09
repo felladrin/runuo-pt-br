@@ -5,7 +5,7 @@ using Server.Targeting;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a leviathan corpse" )]
+    [CorpseName( "o corpo de um leviatã" )]
 	public class Leviathan : BaseCreature
 	{
 		private Mobile m_Fisher;
@@ -27,7 +27,7 @@ namespace Server.Mobiles
 			m_Fisher = fisher;
 
 			// May not be OSI accurate; mostly copied from krakens
-			Name = "a leviathan";
+            Name = "um leviatã";
 			Body = 77;
 			BaseSoundID = 353;
 

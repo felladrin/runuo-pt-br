@@ -5,7 +5,7 @@ using Server.Targeting;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a revenant lion corpse" )]
+    [CorpseName( "o corpo de um leão fantasma" )]
 	public class RevenantLion : BaseCreature
 	{
 		public override WeaponAbility GetWeaponAbility()
@@ -16,7 +16,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public RevenantLion() : base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a Revenant Lion";
+            Name = "um leão fantasma";
 			Body = 251;
 
 			SetStr( 276, 325 );

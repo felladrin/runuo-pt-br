@@ -4,7 +4,7 @@ using Server.Items;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a human corpse" )]
+	[CorpseName( "o corpo de um humano" )]
 	public class Protector : BaseCreature
 	{
 		[Constructable]
@@ -17,8 +17,8 @@ namespace Server.Mobiles
 			HairItemID = Race.Human.RandomHair( this );
 			HairHue = Race.Human.RandomHairHue();
 
-			Name = "a Protector";
-			Title = "the mystic llamaherder";
+			Name = "Protetor";
+            Title = "o místico pastor de lhamas";
 
 			SetStr( 700, 800 );
 			SetDex( 100, 150 );

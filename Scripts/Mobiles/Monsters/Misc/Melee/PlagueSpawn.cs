@@ -7,7 +7,7 @@ using Server.ContextMenus;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a plague spawn corpse" )]
+    [CorpseName( "o corpo de uma cria da praga" )]
 	public class PlagueSpawn : BaseCreature
 	{
 		private Mobile m_Owner;
@@ -67,7 +67,7 @@ namespace Server.Mobiles
 			m_Owner = owner;
 			m_ExpireTime = DateTime.UtcNow + TimeSpan.FromMinutes( 1.0 );
 
-			Name = "a plague spawn";
+            Name = "uma cria da praga";
 			Hue = Utility.Random( 0x11, 15 );
 
 			switch ( Utility.Random( 12 ) )

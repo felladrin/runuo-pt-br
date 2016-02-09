@@ -5,13 +5,13 @@ using Server.Targeting;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a hell hound corpse" )]
+    [CorpseName( "o corpo de um cão infernal" )]
 	public class HellHound : BaseCreature
 	{
 		[Constructable]
 		public HellHound() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a hell hound";
+            Name = "um cão infernal";
 			Body = 98;
 			BaseSoundID = 229;
 

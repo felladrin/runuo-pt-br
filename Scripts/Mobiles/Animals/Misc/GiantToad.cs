@@ -3,14 +3,14 @@ using Server.Mobiles;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a giant toad corpse" )]
+    [CorpseName( "o corpo de um sapo gigante" )]
 	[TypeAlias( "Server.Mobiles.Gianttoad" )]
 	public class GiantToad : BaseCreature
 	{
 		[Constructable]
 		public GiantToad() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Name = "a giant toad";
+            Name = "um sapo gigante";
 			Body = 80;
 			BaseSoundID = 0x26B;
 
