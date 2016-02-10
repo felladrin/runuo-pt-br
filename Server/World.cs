@@ -805,7 +805,7 @@ namespace Server {
 			Console.WriteLine( "Salvamento efetuado em {0:F2} segundos.", watch.Elapsed.TotalSeconds );
 
 			if ( message )
-				Broadcast( 0x35, true, "Salvamento finalizado. O proceso completo levou {0:F1} segundos.", watch.Elapsed.TotalSeconds );
+				Broadcast( 0x35, true, "Salvamento finalizado. O processo completo levou {0:F1} segundos.", watch.Elapsed.TotalSeconds );
 
 			NetState.Resume();
 		}

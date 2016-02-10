@@ -19,12 +19,16 @@ namespace Server.Misc
 
 			Mobile m = args.Mobile;
 
-			m.SendMessage( "Welcome, {0}! There {1} currently {2} user{3} online, with {4} item{5} and {6} mobile{7} in the world.",
+			m.SendMessage(
+                "Bem-vindo, {0}! No momento há {1} jogador{2} online, com {3} ite{4} e {5} mobile{6} no mundo.",
 				args.Mobile.Name,
-				userCount == 1 ? "is" : "are",
-				userCount, userCount == 1 ? "" : "s",
-				itemCount, itemCount == 1 ? "" : "s",
-				mobileCount, mobileCount == 1 ? "" : "s" );
+				userCount,
+                userCount == 1 ? "" : "es",
+				itemCount,
+                itemCount == 1 ? "m" : "ns",
+				mobileCount,
+                mobileCount == 1 ? "" : "s" 
+            );
 		}
 	}
 }
