@@ -13,7 +13,7 @@ namespace Server.Mobiles
 		public override NpcGuild NpcGuild{ get{ return NpcGuild.TinkersGuild; } }
 
 		[Constructable]
-		public StoneCrafter() : base( "the stone crafter" )
+        public StoneCrafter() : base("o artesão de pedras", "a artesã de pedras")
 		{
 			SetSkill( SkillName.Carpentry, 85.0, 100.0 );
 		}
@@ -42,9 +42,6 @@ namespace Server.Mobiles
 			base.Deserialize( reader );
 
 			int version = reader.ReadInt();
-
-			if ( Title == "the stonecrafter" )
-				Title = "the stone crafter";
 		}
 	}
 }

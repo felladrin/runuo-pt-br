@@ -25,7 +25,7 @@ namespace Server.Mobiles
 		public Barracoon() : base( AIType.AI_Melee )
 		{
 			Name = "Barracoon";
-			Title = "the piper";
+            Title = "o flautista";
 			Body = 0x190;
 			Hue = 0x83EC;
 

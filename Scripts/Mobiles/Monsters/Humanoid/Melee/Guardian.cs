@@ -11,8 +11,8 @@ namespace Server.Mobiles
 		[Constructable] 
 		public Guardian() : base( AIType.AI_Archer, FightMode.Aggressor, 10, 1, 0.2, 0.4 ) 
 		{ 
-			InitStats( 100, 125, 25 ); 
-			Title = "the guardian"; 
+			InitStats( 100, 125, 25 );
+            Title = Female ? "a guardiã" : "o guardião";
 
 			SpeechHue = Utility.RandomDyedHue(); 
 

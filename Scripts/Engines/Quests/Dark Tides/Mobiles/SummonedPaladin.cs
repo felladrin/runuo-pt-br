@@ -15,7 +15,7 @@ namespace Server.Engines.Quests.Necro
 			m_Necromancer = necromancer;
 
 			InitStats( 45, 30, 5 );
-			Title = "the Paladin";
+			Title = "o paladino";
 
 			Hue = 0x83F3;
 

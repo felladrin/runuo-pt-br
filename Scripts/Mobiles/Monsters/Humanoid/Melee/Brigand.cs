@@ -15,7 +15,7 @@ namespace Server.Mobiles
 		public Brigand() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
 			SpeechHue = Utility.RandomDyedHue();
-			Title = "the brigand";
+            Title = Female ? "a bandida" : "o bandido";
 			Hue = Utility.RandomSkinHue();
 
 			if ( this.Female = Utility.RandomBool() )

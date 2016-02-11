@@ -17,7 +17,7 @@ namespace Server.Mobiles
 		{
 			Body = 0x190;
 			Name = "Zealot of Khaldun";
-			Title = "the Summoner";
+			Title = "o invocador";
 
 			SetStr( 351, 400 );
 			SetDex( 101, 150 );

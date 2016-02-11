@@ -486,7 +486,7 @@ namespace Server.Mobiles
 
 			InitStats( 100, 100, 25 );
 
-			Title = "the town crier";
+            Title = Female ? "a pregoeira da cidade" : "o arauto da cidade";
 			Hue = Utility.RandomSkinHue();
 
 			if ( !Core.AOS )

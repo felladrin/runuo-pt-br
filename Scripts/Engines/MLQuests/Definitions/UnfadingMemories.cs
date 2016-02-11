@@ -104,7 +104,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Emilio";
-			Title = "the Tortured Artist";
+			Title = "o artista torturado";
 			Race = Race.Human;
 			BodyValue = 0x190;
 			Female = false;
@@ -152,7 +152,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Thalia";
-			Title = "the Bride";
+			Title = "a noiva";
 			Race = Race.Human;
 			BodyValue = 0x191;
 			Female = true;

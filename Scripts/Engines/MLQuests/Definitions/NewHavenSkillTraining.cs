@@ -664,9 +664,9 @@ namespace Server.Engines.MLQuests.Definitions
 			OneTimeOnly = true;
 			Title = 1077750; // The Delucianís Lost Mine
 			Description = 1077753; // Find Jacob's Lost Mine and mine iron ore there, using a pickaxe or shovel. Bring it back to Jacob's forge and smelt the ore into ingots, until you have raised your Mining skill to 50. You may find a packhorse useful for hauling the ore around. The animal trainer in New Haven has packhorses for sale.<br><center>-----</center><br>Howdy! Welcome to my camp. It's not much, I know, but it's all I'll be needin' up here. I don't need them fancy things those townspeople have down there in New Haven. Nope, not one bit. Just me, Bessie, my pick and a thick vein 'o valorite.<br><br>Anyhows, I'm guessin' that you're up here to ask me about minin', aren't ya? Well, don't be expectin' me to tell you where the valorite's at, cause I ain't gonna tell the King of Britannia, much less the likes of you. But I will show ya how to mine and smelt iron, cause there certainly is a 'nough of up in these hills.<br><br>*Jacob looks around, with a perplexed look on his face*<br><br>Problem is, I can't remember where my iron mine's at, so you'll have to find it yourself. Once you're there, have at it with a pickaxe or shovel, then haul it back to camp and I'll show ya how to smelt it. Ya look a bit wimpy, so you might wanna go buy yourself a packhorse in town from the animal trainer to help you haul around all that ore.<br><br>When you're an Apprentice Miner, talk to me and I'll give ya a little somethin' I've got layin' around here... somewhere.
-			RefusalMessage = 1077754; // Couldnít find my iron mine, could ya? Well, neither can I!<br><br>*Jacob laughs*<br><br>Oh, ya donít wanna find it? Well, allrighty then, ya might as well head on back down to town then and stop cluttering up my camp. Come back and talk to me if youíre interested in learniní ëbout mininí.
-			InProgressMessage = 1077755; // Where ya been off a gallivantiní all day, pilgrim? You ainít seen no hard work yet! Get yer arse back out there to my mine and dig up some more iron. Donít forget to take a pickaxe or shovel, and if youíre so inclined, a packhorse too.
-			CompletionMessage = 1077757; // Dang gun it! If that don't beat all! Ya went and did it, didnít ya? What we got ourselves here is a mighty fine brand spankiní new Apprentice Miner!<br><br>I can see ya put some meat on them bones too while you were at it!<br><br>Hereís that little somethiní I told ya I had for ya. Itís a pickaxe with some high falutiní magic inside thatíll help you find the good stuff when youíre off mininí. It wears out fast, though, so you can only use it a few times a day.<br><br>Welp, Iíve got some smeltiní to do, so off with ya. Good luck, pilgrim!
+			RefusalMessage = 1077754; // Couldnít find my iron mine, could ya? Well, neither can I!<br><br>*Jacob laughs*<br><br>Oh, ya donít wanna find it? Well, allrighty then, ya might as well head on back down to town then and stop cluttering up my camp. Come back and talk to me if youíre interested in learnin? ëbout minin?.
+			InProgressMessage = 1077755; // Where ya been off a gallivantin? all day, pilgrim? You ainít seen no hard work yet! Get yer arse back out there to my mine and dig up some more iron. Donít forget to take a pickaxe or shovel, and if youíre so inclined, a packhorse too.
+			CompletionMessage = 1077757; // Dang gun it! If that don't beat all! Ya went and did it, didnít ya? What we got ourselves here is a mighty fine brand spankin? new Apprentice Miner!<br><br>I can see ya put some meat on them bones too while you were at it!<br><br>Hereís that little somethin? I told ya I had for ya. Itís a pickaxe with some high falutin? magic inside thatíll help you find the good stuff when youíre off minin?. It wears out fast, though, so you can only use it a few times a day.<br><br>Welp, Iíve got some smeltin? to do, so off with ya. Good luck, pilgrim!
 			CompletionNotice = 1077756; // You have achieved the rank of Apprentice Miner. Return to Jacob Waltz in at his camp in the hills above New Haven as soon as you can to claim your reward.
 
 			Objectives.Add( new GainSkillObjective( SkillName.Mining, 500, true, true ) );
@@ -724,7 +724,7 @@ namespace Server.Engines.MLQuests.Definitions
 		public Aelorn()
 		{
 			Name = "Aelorn";
-			Title = "the Chivalry Instructor";
+            Title = "o instrutor da cavalaria";
 			BodyValue = 0x190;
 			Hue = 0x83EA;
 			HairItemID = 0x203C;
@@ -791,7 +791,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Dimethro";
-			Title = "the Wrestling Instructor";
+            Title = "o instrutor de luta livre";
 			BodyValue = 0x190;
 			Hue = 0x83EA;
 			HairItemID = 0x203D;
@@ -850,7 +850,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Churchill";
-			Title = "the Mace Fighting Instructor";
+            Title = "o instrutor de luta com maÅ0ä4as";
 			BodyValue = 0x190;
 			Hue = 0x83EA;
 			HairItemID = 0x203C;
@@ -924,7 +924,7 @@ namespace Server.Engines.MLQuests.Definitions
 		public Robyn()
 		{
 			Name = "Robyn";
-			Title = "the Archery Instructor";
+            Title = "a instrutora de tiro com arco";
 			BodyValue = 0x191;
 			Hue = 0x83EA;
 			HairItemID = 0x203C;
@@ -1010,7 +1010,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Recaro";
-			Title = "the Fencer Instructor";
+            Title = "o instrutor de esgrima";
 			BodyValue = 0x190;
 			Hue = 0x83EA;
 			HairItemID = 0x203C;
@@ -1090,7 +1090,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Alden Armstrong";
-			Title = "the Tactics Instructor";
+            Title = "o instrutor de t®¢ticas";
 			BodyValue = 0x190;
 			Hue = 0x83EA;
 			HairItemID = 0x203B;
@@ -1151,7 +1151,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Jockles";
-			Title = "the Swordsmanship Instructor";
+            Title = "o instrutor de luta com espadas";
 			BodyValue = 0x190;
 			Hue = 0x83FA;
 			HairItemID = 0x203C;
@@ -1212,7 +1212,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Tyl Ariadne";
-			Title = "the Parrying Instructor";
+			Title = "o instrutor de defesa";
 			BodyValue = 0x190;
 			Hue = 0x8374;
 			HairItemID = 0;
@@ -1293,7 +1293,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Alefian";
-			Title = "the Resisting Spells Instructor";
+            Title = "o instrutor de resist®∫ncia ®§ magias";
 			BodyValue = 0x190;
 			Hue = 0x83EA;
 			HairItemID = 0x203D;
@@ -1349,7 +1349,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Gustar";
-			Title = "the Meditation Instructor";
+			Title = "o instrutor de meditaÅ0ä4Å0ä0o";
 			BodyValue = 0x190;
 			Hue = 0x83F5;
 			HairItemID = 0x203B;
@@ -1433,7 +1433,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Jillian";
-			Title = "the Inscription Instructor";
+            Title = "a instrutora de inscriÅ0ä4Å0ä0o";
 			BodyValue = 0x191;
 			Female = true;
 			Hue = 0x83EA;
@@ -1490,7 +1490,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Kaelynna";
-			Title = "the Magery Instructor";
+			Title = "a instrutora de magias";
 			BodyValue = 0x191;
 			Female = true;
 			Hue = 0x83EA;
@@ -1547,7 +1547,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Mithneral";
-			Title = "the Evaluating Intelligence Instructor";
+			Title = "o instrutor de avaliaÅ0ä4Å0ä0o de intelig®∫ncia";
 			BodyValue = 0x190;
 			Hue = 0x83EA;
 			HairItemID = 0x203C;
@@ -1604,7 +1604,7 @@ namespace Server.Engines.MLQuests.Definitions
 		public AmeliaYoungstone()
 		{
 			Name = "Amelia Youngstone";
-			Title = "the Tinkering Instructor";
+			Title = "a instrutora de consertos";
 			BodyValue = 0x191;
 			Female = true;
 			Hue = 0x83EA;
@@ -1667,7 +1667,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Andreas Vesalius";
-			Title = "the Anatomy Instructor";
+			Title = "o instrutor de anatomia";
 			BodyValue = 0x190;
 			Hue = 0x83EC;
 			HairItemID = 0x203C;
@@ -1727,7 +1727,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Avicenna";
-			Title = "the Healing Instructor";
+			Title = "o instrutor de cura";
 			BodyValue = 0x190;
 			Hue = 0x83EA;
 			HairItemID = 0x203B;
@@ -1784,7 +1784,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Sarsmea Smythe";
-			Title = "the Focus Instructor";
+			Title = "a instrutora de foco";
 			BodyValue = 0x191;
 			Female = true;
 			Hue = 0x83EA;
@@ -1917,7 +1917,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Chiyo";
-			Title = "the Hiding Instructor";
+			Title = "o instrutor da arte de esconder-se";
 			BodyValue = 0xF7;
 
 			InitStats( 100, 100, 25 );
@@ -1966,7 +1966,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Jun";
-			Title = "the Stealth Instructor";
+			Title = "o instrutor de movimentos silenciosos";
 			BodyValue = 0x190;
 			Hue = 0x8403;
 			HairItemID = 0x203B;
@@ -2030,7 +2030,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Walker";
-			Title = "the Tracking Instructor";
+            Title = "o instrutor de rastreamento";
 			BodyValue = 0x190;
 			Hue = 0x83EA;
 			HairItemID = 0x203B;
@@ -2159,7 +2159,7 @@ namespace Server.Engines.MLQuests.Definitions
 		public Mulcivikh()
 		{
 			Name = "Mulcivikh";
-			Title = "the Necromancy Instructor";
+            Title = "o instrutor de necromancia";
 			BodyValue = 0x190;
 			Hue = 0x83EA;
 			HairItemID = 0x203D;
@@ -2236,7 +2236,7 @@ namespace Server.Engines.MLQuests.Definitions
 		public Morganna()
 		{
 			Name = "Morganna";
-			Title = "the Spirit Speak Instructor";
+			Title = "a instrutora de conversas com esp®™ritos";
 			BodyValue = 0x191;
 			Female = true;
 			Hue = 0x83EA;
@@ -2297,7 +2297,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Jacob Waltz";
-			Title = "the Miner Instructor";
+			Title = "o instrutor de mineraÅ0ä4Å0ä0o";
 			BodyValue = 0x190;
 			Hue = 0x83EA;
 			HairItemID = 0x2048;
@@ -2356,7 +2356,7 @@ namespace Server.Engines.MLQuests.Definitions
 		public GeorgeHephaestus()
 		{
 			Name = "George Hephaestus";
-			Title = "the Blacksmith Instructor";
+            Title = "o instrutor de ferreiros";
 			BodyValue = 0x190;
 			Hue = 0x83EA;
 			HairItemID = 0x203B;

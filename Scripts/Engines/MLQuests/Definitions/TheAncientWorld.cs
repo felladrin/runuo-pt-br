@@ -119,7 +119,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Lorekeeper Broolol";
-			Title = "the keeper of tradition";
+            Title = "a guardiã da tradição";
 			Race = Race.Elf;
 			BodyValue = 0x25E;
 			Female = true;

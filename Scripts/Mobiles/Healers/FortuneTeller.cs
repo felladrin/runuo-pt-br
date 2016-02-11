@@ -23,7 +23,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public FortuneTeller()
 		{
-			Title = "the fortune teller";
+            Title = (Female ? "a" : "o") + " cartomante";
 
 			SetSkill( SkillName.Anatomy, 85.0, 100.0 );
 			SetSkill( SkillName.Healing, 90.0, 100.0 );

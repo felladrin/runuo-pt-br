@@ -24,7 +24,7 @@ namespace Server.Engines.MLQuests.Mobiles
 		public SirHelper()
 		{
 			Name = "Sir Helper";
-			Title = "the Profession Guide"; // TODO: Don't display in paperdoll
+			Title = "o guia de profissões";
 
 			Hue = 0x83EA;
 

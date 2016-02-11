@@ -14,7 +14,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public Minter()
 		{
-			Title = "the minter";
+            Title = Female ? "a ministra" : "o ministro";
 		}
 
 		public Minter( Serial serial ) : base( serial )

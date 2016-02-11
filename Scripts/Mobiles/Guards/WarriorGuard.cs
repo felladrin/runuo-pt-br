@@ -21,7 +21,7 @@ namespace Server.Mobiles
 		public WarriorGuard( Mobile target ) : base( target )
 		{
 			InitStats( 1000, 1000, 1000 );
-			Title = "the guard";
+            Title = (Female ? "a" : "o") + " guarda";
 
 			SpeechHue = Utility.RandomDyedHue();
 

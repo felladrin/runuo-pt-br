@@ -10,8 +10,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public Peasant()
 		{
-			Title = "the peasant";
-
+            Title = Female ? "a camponêsa" : "o camponês";
 		}
 
 		public override bool CanTeach{ get{ return true; } }

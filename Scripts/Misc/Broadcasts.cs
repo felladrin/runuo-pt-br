@@ -15,7 +15,7 @@ namespace Server.Misc
 		{
 			try
 			{
-				World.Broadcast( 0x35, true, "The server has crashed." );
+				World.Broadcast( 0x35, true, "Ocorreu um erro no servidor." );
 			}
 			catch
 			{
@@ -26,7 +26,7 @@ namespace Server.Misc
 		{
 			try
 			{
-				World.Broadcast( 0x35, true, "The server has shut down." );
+                World.Broadcast( 0x35, true, "O servidor foi encerrado." );
 			}
 			catch
 			{

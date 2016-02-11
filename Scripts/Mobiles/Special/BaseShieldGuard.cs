@@ -11,7 +11,7 @@ namespace Server.Mobiles
 		public BaseShieldGuard() : base( AIType.AI_Melee, FightMode.Aggressor, 14, 1, 0.8, 1.6 )
 		{
 			InitStats( 1000, 1000, 1000 );
-			Title = "the guard";
+            Title = (Female ? "a" : "o") + " guarda";
 
 			SpeechHue = Utility.RandomDyedHue();
 

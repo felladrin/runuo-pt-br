@@ -10,7 +10,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public EscortableMage()
 		{
-			Title = "the mage";
+            Title = Female ? "a feiticeira" : "o mago";
 
 			SetSkill( SkillName.EvalInt, 80.0, 100.0 );
 			SetSkill( SkillName.Inscribe, 80.0, 100.0 );

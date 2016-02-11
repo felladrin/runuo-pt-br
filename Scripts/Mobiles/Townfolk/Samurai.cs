@@ -12,7 +12,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public Samurai() : base( AIType.AI_Melee, FightMode.Aggressor, 10, 1, 0.2, 0.4 )
 		{
-			Title = "the samurai";
+            Title = Female ? "a mulher samurai" : "o samurai";
 
 			InitStats( 100, 100, 25 );
 

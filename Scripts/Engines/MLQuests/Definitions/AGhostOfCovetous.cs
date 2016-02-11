@@ -113,7 +113,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Ben";
-			Title = "the Apprentice Necromancer";
+			Title = "o aprendiz de necromante";
 			BodyValue = 0x190;
 			Hue = 0x83FD;
 			HairItemID = 0x2048;
@@ -197,7 +197,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Leon";
-			Title = "the Alchemist";
+			Title = "o alquimista";
 			Race = Race.Human;
 			BodyValue = 0x190;
 			Female = false;
@@ -241,7 +241,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Andros";
-			Title = "the Blacksmith";
+			Title = "o ferreiro";
 			BodyValue = 0x190;
 			Hue = 0x8409;
 			FacialHairItemID = 0x2041;

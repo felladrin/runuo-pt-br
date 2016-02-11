@@ -148,7 +148,7 @@ namespace Server.Engines.MLQuests.Definitions
 			Female = true;
 			Body = 401;
 			Name = "Lissbet";
-			Title = "the flower girl";
+            Title = "a menina da flor";
 
 			HairItemID = 0x203D;
 			HairHue = 0x1BB;
@@ -191,7 +191,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Grandpa Charley";
-			Title = "the farmer";
+			Title = "o fazendeiro";
 			Body = 400;
 			Hue = Race.RandomSkinHue();
 			InitStats( 100, 100, 25 );
@@ -248,7 +248,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Jelrice";
-			Title = "the trader";
+			Title = "o comerciante";
 			Race = Race.Human;
 			BodyValue = 0x191;
 			Female = true;
@@ -298,7 +298,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Yorus";
-			Title = "the tinker";
+            Title = "o funileiro";
 			Race = Race.Human;
 			BodyValue = 0x190;
 			Female = false;

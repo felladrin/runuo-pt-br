@@ -8,7 +8,7 @@ using Server.Engines.CannedEvil;
 
 namespace Server.Mobiles
 {
-	[CorpseName("a corpse of Twaulo")]
+	[CorpseName("o corpo de Twaulo")]
 	public class Twaulo : BaseChampion
 	{
 		public override ChampionSkullType SkullType{ get{ return ChampionSkullType.Pain; } }
@@ -24,7 +24,7 @@ namespace Server.Mobiles
 			: base(AIType.AI_Melee)
 		{
 			Name = "Twaulo";
-			Title = "of the Glade";
+            Title = "da clareira";
 			Body = 101;
 			BaseSoundID = 679;
 			Hue = 0x455;

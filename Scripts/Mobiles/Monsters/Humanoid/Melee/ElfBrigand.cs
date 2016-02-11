@@ -16,7 +16,7 @@ namespace Server.Mobiles
 		public ElfBrigand() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
 			SpeechHue = Utility.RandomDyedHue();
-			Title = "the brigand";
+            Title = Female ? "a bandida" : "o bandido";
 			Race = Race.Elf;
 			Hue = Race.RandomSkinHue();
 

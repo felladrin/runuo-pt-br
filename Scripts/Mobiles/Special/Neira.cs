@@ -22,7 +22,7 @@ namespace Server.Mobiles
 		public Neira() : base( AIType.AI_Mage )
 		{
 			Name = "Neira";
-			Title = "the necromancer";
+            Title = (Female ? "a" : "o") + " necromante";
 			Body = 401;
 			Hue = 0x83EC;
 

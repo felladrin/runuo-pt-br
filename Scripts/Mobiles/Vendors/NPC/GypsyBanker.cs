@@ -18,7 +18,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public GypsyBanker()
 		{
-			Title = "the gypsy banker";
+			Title = Female ? "a banqueira cigana" : "o banqueiro cigano";
 		}
 
 		public override void InitOutfit()

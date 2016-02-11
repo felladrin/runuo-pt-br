@@ -669,7 +669,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Beotham";
-			Title = "the bowcrafter";
+			Title = "o criador de arcos";
 			Race = Race.Elf;
 			BodyValue = 0x25D;
 			Female = false;
@@ -731,7 +731,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Danoel";
-			Title = "the metal weaver";
+            Title = "o tecelão de metal";
 			Race = Race.Elf;
 			BodyValue = 0x25D;
 			Female = false;
@@ -791,7 +791,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Tallinin";
-			Title = "the cloth weaver";
+            Title = "a tecelã";
 			Race = Race.Elf;
 			BodyValue = 0x25E;
 			Female = true;
@@ -848,7 +848,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Tiana";
-			Title = "the guard";
+			Title = "a guarda";
 			Race = Race.Elf;
 			BodyValue = 0x25E;
 			Female = true;
@@ -915,7 +915,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Lorekeeper Oolua";
-			Title = "the keeper of tradition";
+            Title = "a guardiã da tradição";
 			Race = Race.Elf;
 			BodyValue = 0x25E;
 			Female = true;
@@ -974,7 +974,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Lorekeeper Rollarn";
-			Title = "the keeper of tradition";
+            Title = "o guardião da tradição";
 			Race = Race.Elf;
 			BodyValue = 0x25D;
 			Female = false;
@@ -1038,7 +1038,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Dallid";
-			Title = "the cook";
+			Title = "o cozinheiro";
 			Race = Race.Elf;
 			BodyValue = 0x25D;
 			Female = false;
@@ -1097,7 +1097,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Canir";
-			Title = "the thaumaturgist";
+            Title = "a taumaturga";
 			Race = Race.Elf;
 			BodyValue = 0x25E;
 			Female = true;
@@ -1144,7 +1144,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Yellienir";
-			Title = "the bark weaver";
+            Title = "a tecedeira de cascas";
 			Race = Race.Elf;
 			BodyValue = 0x25E;
 			Female = true;
@@ -1200,7 +1200,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Elder Onallan";
-			Title = "the wise";
+			Title = "o sábio";
 			Race = Race.Elf;
 			BodyValue = 0x25D;
 			Female = false;

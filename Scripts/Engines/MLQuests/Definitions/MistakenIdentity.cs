@@ -190,7 +190,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Aernya";
-			Title = "the Mistress of Admissions";
+            Title = "a senhora das admissões";
 			Race = Race.Human;
 			BodyValue = 0x191;
 			Female = true;
@@ -245,7 +245,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Gorrow";
-			Title = "the Mayor";
+            Title = "o prefeito";
 			Race = Race.Human;
 			BodyValue = 0x190;
 			Female = false;
@@ -296,7 +296,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Master Gnosos";
-			Title = "the necromancer";
+            Title = "o necromante";
 			Race = Race.Human;
 			BodyValue = 0x190;
 			Female = false;

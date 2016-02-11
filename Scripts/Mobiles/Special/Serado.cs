@@ -28,7 +28,7 @@ namespace Server.Mobiles
 		public Serado() : base( AIType.AI_Melee )
 		{
 			Name = "Serado";
-			Title = "the awakened";
+            Title = "o despertado";
 
 			Body = 249;
 			Hue = 0x96C;

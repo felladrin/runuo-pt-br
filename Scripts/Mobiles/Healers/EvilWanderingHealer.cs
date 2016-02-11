@@ -23,8 +23,8 @@ namespace Server.Mobiles
 		[Constructable]
 		public EvilWanderingHealer()
 		{
-			Title = ( Core.AOS ) ? "the Priest Of Mondain" : "the evil wandering healer";
-			Karma = -10000;
+            Title = Female ? "a meléfica curandeira errante" : "o meléfico curandeiro errante";
+            Karma = -10000;
 
 			AddItem( new GnarledStaff() );
 
@@ -73,7 +73,7 @@ namespace Server.Mobiles
 			int version = reader.ReadInt();
 
 			if ( version < 1 && Title == "the wandering healer" && Core.AOS )
-				Title = "the priest of Mondain";
+                Title = "o sacerdote de Mondain";
 		}
 	}
 }

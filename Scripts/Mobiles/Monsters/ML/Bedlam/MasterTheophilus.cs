@@ -13,7 +13,7 @@ namespace Server.Mobiles
 			IsParagon = true;
 
 			Name = "Master Theophilus";
-			Title = "the necromancer";
+			Title = "o necromante";
 			Hue = 0;
 
 			SetStr( 137, 187 );

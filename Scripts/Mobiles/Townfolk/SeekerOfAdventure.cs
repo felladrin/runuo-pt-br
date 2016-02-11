@@ -31,8 +31,8 @@ namespace Server.Mobiles
 		[Constructable]
 		public SeekerOfAdventure()
 		{
-			Title = "the seeker of adventure";
-		}
+            Title = (Female ? "a caçadora" : "o caçador") + " de aventuras";
+        }
 
 		public override bool ClickTitle{ get{ return false; } } // Do not display 'the seeker of adventure' when single-clicking
 

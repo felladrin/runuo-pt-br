@@ -14,7 +14,7 @@ namespace Server.Engines.Quests.Haven
 		public MilitiaFighter() : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
 			InitStats( 40, 30, 5 );
-			Title = "the Militia Fighter";
+            Title = Female ? "a guarda da milícia" : "o guerreiro da milícia";
 
 			SpeechHue = Utility.RandomDyedHue();
 

@@ -123,7 +123,7 @@ namespace Server.Items
 						Guild guild = new Guild( from, text, "none" );
 
 						from.Guild = guild;
-						from.GuildTitle = "Guildmaster";
+						from.GuildTitle = "Mestre da Guilda";
 
 						Guildstone stone = new Guildstone( guild );
 

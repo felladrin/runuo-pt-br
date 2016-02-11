@@ -348,7 +348,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Andric";
-			Title = "the archer trainer";
+            Title = "o treinador de arqueirismo";
 			Race = Race.Human;
 			BodyValue = 0x190;
 			Female = false;
@@ -412,7 +412,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Kashiel";
-			Title = "the archer";
+			Title = "a arqueira";
 			Race = Race.Human;
 			BodyValue = 0x191;
 			Female = true;
@@ -483,7 +483,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Asandos";
-			Title = "the chef";
+			Title = "o chef";
 			Race = Race.Human;
 			BodyValue = 0x190;
 			Female = false;
@@ -539,7 +539,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Clairesse";
-			Title = "the servant";
+			Title = "a servente";
 			Race = Race.Human;
 			BodyValue = 0x191;
 			Female = true;
@@ -593,7 +593,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Gervis";
-			Title = "the blacksmith trainer";
+			Title = "o treinador de ferreiros";
 			Race = Race.Human;
 			BodyValue = 0x190;
 			Female = false;
@@ -652,7 +652,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Mugg";
-			Title = "the miner";
+			Title = "o minerador";
 			Race = Race.Human;
 			BodyValue = 0x190;
 			Female = false;
@@ -708,7 +708,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Lowel";
-			Title = "the carpenter";
+            Title = "o carpinteiro";
 			Race = Race.Human;
 			BodyValue = 0x190;
 			Female = false;
@@ -762,7 +762,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Lyle";
-			Title = "the mage";
+			Title = "o mago";
 			Race = Race.Human;
 			BodyValue = 0x190;
 			Female = false;
@@ -805,7 +805,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Nibbet";
-			Title = "the tinker";
+            Title = "o funileiro";
 			Race = Race.Human;
 			BodyValue = 0x190;
 			Female = false;
@@ -860,7 +860,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Norton";
-			Title = "the fisher";
+			Title = "o pescador";
 			Race = Race.Human;
 			BodyValue = 0x190;
 			Female = false;
@@ -914,7 +914,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Sadrah";
-			Title = "the courier";
+            Title = "a mensageira";
 			Race = Race.Human;
 			BodyValue = 0x191;
 			Female = true;
@@ -969,7 +969,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Hargrove";
-			Title = "the Lumberjack";
+            Title = "o lenhador";
 			Race = Race.Human;
 			BodyValue = 0x190;
 			Female = false;

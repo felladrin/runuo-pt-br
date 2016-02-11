@@ -117,7 +117,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Aurelia";
-			Title = "the Architect's Daughter";
+			Title = "a filha do arquiteto";
 			Race = Race.Human;
 			BodyValue = 0x191;
 			Female = true;
@@ -167,7 +167,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Skeleton of Szandor";
-			Title = "the Late Architect";
+            Title = "o falecido arquiteto";
 			Hue = 0x83F2; // TODO: Random human hue? Why???
 			Body = 0x32;
 			InitStats( 100, 100, 25 );

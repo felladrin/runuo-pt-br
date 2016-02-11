@@ -667,7 +667,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Sledge";
-			Title = "the Versatile";
+            Title = "o versátil";
 			Body = 400;
 			Hue = Race.RandomSkinHue();
 			InitStats( 100, 100, 25 );
@@ -709,7 +709,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Patricus";
-			Title = "the Trader";
+            Title = "o comerciante";
 			Body = 400;
 			Hue = Race.RandomSkinHue();
 			InitStats( 100, 100, 25 );
@@ -761,7 +761,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Belulah";
-			Title = "the scorned";
+            Title = "o desprezado";
 			Female = true;
 			Body = 401;
 			Hue = Race.RandomSkinHue();

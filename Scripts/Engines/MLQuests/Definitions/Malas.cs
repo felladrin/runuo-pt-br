@@ -57,7 +57,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Drithen";
-			Title = "the Fierce";
+            Title = "o feroz";
 			Race = Race.Human;
 			BodyValue = 0x190;
 			Female = false;

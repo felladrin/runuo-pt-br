@@ -30,7 +30,7 @@ namespace Server.Mobiles
 				AddItem( new Kilt( Utility.RandomDyedHue() ) );
 				AddItem( new Shirt( Utility.RandomDyedHue() ) );
 				AddItem( new ThighBoots() );
-				Title = "the gypsy";
+				Title = "a cigana";
 			}
 			else
 			{
@@ -39,7 +39,7 @@ namespace Server.Mobiles
 				AddItem( new ShortPants( Utility.RandomNeutralHue() ) );
 				AddItem( new Shirt( Utility.RandomDyedHue() ) );
 				AddItem( new Sandals() );
-				Title = "the gypsy";
+				Title = "o cigano";
 			}
 
 			AddItem( new Bandana( Utility.RandomDyedHue() ) );

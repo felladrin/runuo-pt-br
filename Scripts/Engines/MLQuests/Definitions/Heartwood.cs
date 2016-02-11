@@ -1158,7 +1158,7 @@ namespace Server.Engines.MLQuests.Definitions
 		{
 			Activated = true;
 			HasRestartDelay = true;
-			Title = 1073901; // H‚ute Couture
+			Title = 1073901; // Hute Couture
 			Description = 1074091; // Most human apparel is interesting to elven eyes. But there is one garment - the flower garland - which sounds very elven indeed. Could I see how a human crafts such an object of beauty? In exchange, I could share with you the wonders of elven garments.
 			RefusalMessage = 1073921; // I will patiently await your reconsideration.
 			InProgressMessage = 1073947; // I will be in your debt if you bring me flower garlands.
@@ -1269,7 +1269,7 @@ namespace Server.Engines.MLQuests.Definitions
 			Description = 1074710; // I'm working on a striking necklace -- something really unique -- and I know just what I need to finish it up.  A huge fang!  Won't that catch the eye?  I would like to employ you to find me such an item, perhaps a snake would make the ideal donor.  I'll make it worth your while, of course.
 			RefusalMessage = 1074723; // I understand.  I don't like snakes much either.  They're so creepy.
 			InProgressMessage = 1074722; // Those really big snakes like swamps, I've heard.  You might try the blighted grove.
-			CompletionMessage = 1074721; // Do you have it?  *gasp* What a tooth!  Here Ö I must get right to work.
+			CompletionMessage = 1074721; // Do you have it?  *gasp* What a tooth!  Here  I must get right to work.
 
 			Objectives.Add( new CollectObjective( 1, typeof( CoilsFang ), "coil's fang" ) );
 
@@ -1841,7 +1841,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Saril";
-			Title = "the guard";
+			Title = "a guarda";
 			Race = Race.Elf;
 			BodyValue = 0x25E;
 			Female = true;
@@ -1893,7 +1893,7 @@ namespace Server.Engines.MLQuests.Definitions
 		{
 			MLQuestSystem.Tell( this, pm, Utility.RandomList(
 				1074187, // Want a job?
-				1074210 // Hi.† Looking for something to do?
+				1074210 // Hi. Looking for something to do?
 			) );
 		}
 
@@ -1902,7 +1902,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Cailla";
-			Title = "the guard";
+			Title = "a guarda";
 			Race = Race.Elf;
 			BodyValue = 0x25E;
 			Female = true;
@@ -1954,7 +1954,7 @@ namespace Server.Engines.MLQuests.Definitions
 		public override void Shout( PlayerMobile pm )
 		{
 			MLQuestSystem.Tell( this, pm, Utility.RandomList(
-				1074213, // Hey buddy.† Looking for work?
+				1074213, // Hey buddy. Looking for work?
 				1074187 // Want a job?
 			) );
 		}
@@ -1964,7 +1964,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Tamm";
-			Title = "the guard";
+			Title = "o guarda";
 			Race = Race.Elf;
 			BodyValue = 0x25D;
 			Female = false;
@@ -2015,7 +2015,7 @@ namespace Server.Engines.MLQuests.Definitions
 		{
 			MLQuestSystem.Tell( this, pm, Utility.RandomList(
 				1074211, // I could use some help.
-				1074218 // Hey!† I want to talk to you, now.
+				1074218 // Hey! I want to talk to you, now.
 			) );
 		}
 
@@ -2024,7 +2024,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Landy";
-			Title = "the soil nurturer";
+            Title = "a educadora do solo";
 			Race = Race.Elf;
 			BodyValue = 0x25D;
 			Female = false;
@@ -2074,15 +2074,15 @@ namespace Server.Engines.MLQuests.Definitions
 		public override bool CanShout { get { return true; } }
 		public override void Shout( PlayerMobile pm )
 		{
-			MLQuestSystem.Tell( this, pm, 1074223 ); // Have you done it yet?† Oh, I havenít told you, have I?
+			MLQuestSystem.Tell( this, pm, 1074223 ); // Have you done it yet? Oh, I havent told you, have I?
 		}
 
 		[Constructable]
 		public Alejaha()
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
-			Name = "Elder Alejaha";
-			Title = "the wise";
+			Name = "Anci√£ Alejaha";
+			Title = "a s√°bia";
 			Race = Race.Elf;
 			BodyValue = 0x25E;
 			Female = true;
@@ -2136,7 +2136,7 @@ namespace Server.Engines.MLQuests.Definitions
 		{
 			MLQuestSystem.Tell( this, pm, Utility.RandomList(
 				1074219, // Hello there, can I have a moment of your time?
-				1074223 // Have you done it yet?† Oh, I havenít told you, have I?
+				1074223 // Have you done it yet? Oh, I havent told you, have I?
 			) );
 		}
 
@@ -2145,7 +2145,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Mielan";
-			Title = "the arcanist";
+			Title = "o arcanista";
 			Race = Race.Elf;
 			BodyValue = 0x25D;
 			Female = false;
@@ -2203,7 +2203,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Ciala";
-			Title = "the arborist";
+			Title = "a arborista";
 			Race = Race.Elf;
 			BodyValue = 0x25E;
 			Female = true;
@@ -2255,7 +2255,7 @@ namespace Server.Engines.MLQuests.Definitions
 		public override void Shout( PlayerMobile pm )
 		{
 			MLQuestSystem.Tell( this, pm, Utility.RandomList(
-				1074220, // May I call you friend?† I have a favor to beg of you.
+				1074220, // May I call you friend? I have a favor to beg of you.
 				1074222 // Could I trouble you for some assistance?
 			) );
 		}
@@ -2265,7 +2265,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Aniel";
-			Title = "the arborist";
+			Title = "o arborista";
 			Race = Race.Elf;
 			BodyValue = 0x25D;
 			Female = false;
@@ -2314,7 +2314,7 @@ namespace Server.Engines.MLQuests.Definitions
 		{
 			MLQuestSystem.Tell( this, pm, Utility.RandomList(
 				1074188, // Weakling! You are not up to the task I have.
-				1074191, // Just keep walking away!† I thought so. Coward!† Iíll bite your legs off!
+				1074191, // Just keep walking away! I thought so. Coward! Ill bite your legs off!
 				1074195 // You there, in the stupid hat!   Come here.
 			) );
 		}
@@ -2324,7 +2324,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Aulan";
-			Title = "the expeditionist";
+            Title = "o expedicionista";
 			Race = Race.Elf;
 			BodyValue = 0x25D;
 			Female = false;
@@ -2385,7 +2385,7 @@ namespace Server.Engines.MLQuests.Definitions
 		{
 			MLQuestSystem.Tell( this, pm, Utility.RandomList(
 				1074212, // *yawn* You busy?
-				1074210 // Hi.† Looking for something to do?
+				1074210 // Hi. Looking for something to do?
 			) );
 		}
 
@@ -2394,7 +2394,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Brinnae";
-			Title = "the wise";
+            Title = "a s√°bia";
 			Race = Race.Elf;
 			BodyValue = 0x25E;
 			Female = true;
@@ -2440,8 +2440,8 @@ namespace Server.Engines.MLQuests.Definitions
 		public override void Shout( PlayerMobile pm )
 		{
 			MLQuestSystem.Tell( this, pm, Utility.RandomList(
-				1074204, // Greetings seeker.† I have an urgent matter for you, if you are willing.
-				1074201 // Waste not a minute! Thereís work to be done.
+				1074204, // Greetings seeker. I have an urgent matter for you, if you are willing.
+				1074201 // Waste not a minute! Theres work to be done.
 			) );
 		}
 
@@ -2449,8 +2449,8 @@ namespace Server.Engines.MLQuests.Definitions
 		public Caelas()
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
-			Name = "Elder Caelas";
-			Title = "the wise";
+			Name = "Anci√£o Caelas";
+            Title = "o s√°bio";
 			Race = Race.Elf;
 			BodyValue = 0x25D;
 			Female = false;
@@ -2508,7 +2508,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Clehin";
-			Title = "the soil nurturer";
+            Title = "a educadora do solo";
 			Race = Race.Elf;
 			BodyValue = 0x25E;
 			Female = true;
@@ -2564,7 +2564,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Cloorne";
-			Title = "the expeditionist";
+            Title = "o expedicionista";
 			Race = Race.Elf;
 			BodyValue = 0x25D;
 			Female = false;
@@ -2625,7 +2625,7 @@ namespace Server.Engines.MLQuests.Definitions
 		public override void Shout( PlayerMobile pm )
 		{
 			MLQuestSystem.Tell( this, pm, Utility.RandomList(
-				1074207, // Good day to you friend! Allow me to offer you a fabulous opportunity!† Thrills and adventure await!
+				1074207, // Good day to you friend! Allow me to offer you a fabulous opportunity! Thrills and adventure await!
 				1074209 // Hey, could you help me out with something?
 			) );
 		}
@@ -2635,7 +2635,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Salaenih";
-			Title = "the expeditionist";
+            Title = "a expedicionista";
 			Race = Race.Elf;
 			BodyValue = 0x25E;
 			Female = true;
@@ -2703,8 +2703,8 @@ namespace Server.Engines.MLQuests.Definitions
 		public override void Shout( PlayerMobile pm )
 		{
 			MLQuestSystem.Tell( this, pm, Utility.RandomList(
-				1074210, // Hi.† Looking for something to do?
-				1074220 // May I call you friend?† I have a favor to beg of you.
+				1074210, // Hi. Looking for something to do?
+				1074220 // May I call you friend? I have a favor to beg of you.
 			) );
 		}
 
@@ -2713,7 +2713,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Vilo";
-			Title = "the guard";
+			Title = "o guarda";
 			Race = Race.Elf;
 			BodyValue = 0x25D;
 			Female = false;
@@ -2775,7 +2775,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Tholef";
-			Title = "the grape tender";
+			Title = "o encarregado das uvas";
 			Race = Race.Elf;
 			BodyValue = 0x25D;
 			Female = false;
@@ -2839,7 +2839,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Tillanil";
-			Title = "the grape tender";
+			Title = "a encarregada das uvas";
 			Race = Race.Elf;
 			BodyValue = 0x25E;
 			Female = true;
@@ -2886,8 +2886,8 @@ namespace Server.Engines.MLQuests.Definitions
 		public override void Shout( PlayerMobile pm )
 		{
 			MLQuestSystem.Tell( this, pm, Utility.RandomList(
-				1074221, // Greetings!† I have a small task for you good traveler.
-				1074201 // Waste not a minute! Thereís work to be done.
+				1074221, // Greetings! I have a small task for you good traveler.
+				1074201 // Waste not a minute! Theres work to be done.
 			) );
 		}
 
@@ -2896,7 +2896,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Waelian";
-			Title = "the trinket weaver";
+			Title = "o criador de bugigangas";
 			Race = Race.Elf;
 			BodyValue = 0x25D;
 			Female = false;
@@ -2950,7 +2950,7 @@ namespace Server.Engines.MLQuests.Definitions
 		public override void Shout( PlayerMobile pm )
 		{
 			MLQuestSystem.Tell( this, pm, Utility.RandomList(
-				1074200, // Thank goodness you are here, thereís no time to lose.
+				1074200, // Thank goodness you are here, theres no time to lose.
 				1074206 // Excuse me please traveler, might I have a little of your time?
 			) );
 		}
@@ -2960,7 +2960,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Sleen";
-			Title = "the trinket weaver";
+			Title = "a criadora de bugigangas";
 			Race = Race.Elf;
 			BodyValue = 0x25E;
 			Female = true;
@@ -3018,7 +3018,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Unoelil";
-			Title = "the bark weaver";
+            Title = "a tecedeira de cascas";
 			Race = Race.Elf;
 			BodyValue = 0x25E;
 			Female = true;
@@ -3066,7 +3066,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Anolly";
-			Title = "the bark weaver";
+            Title = "o tecel√£o de cascas";
 			Race = Race.Elf;
 			BodyValue = 0x25D;
 			Female = false;
@@ -3114,8 +3114,8 @@ namespace Server.Engines.MLQuests.Definitions
 		public override void Shout( PlayerMobile pm )
 		{
 			MLQuestSystem.Tell( this, pm, Utility.RandomList(
-				1074210, // Hi.† Looking for something to do?
-				1074213 // Hey buddy.† Looking for work?
+				1074210, // Hi. Looking for something to do?
+				1074213 // Hey buddy. Looking for work?
 			) );
 		}
 
@@ -3124,7 +3124,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Jusae";
-			Title = "the bowcrafter";
+            Title = "o criador de arcos";
 			Race = Race.Elf;
 			BodyValue = 0x25D;
 			Female = false;
@@ -3181,8 +3181,8 @@ namespace Server.Engines.MLQuests.Definitions
 		public override void Shout( PlayerMobile pm )
 		{
 			MLQuestSystem.Tell( this, pm, Utility.RandomList(
-				1074223, // Have you done it yet?† Oh, I havenít told you, have I?
-				1074213 // Hey buddy.† Looking for work?
+				1074223, // Have you done it yet? Oh, I havent told you, have I?
+				1074213 // Hey buddy. Looking for work?
 			) );
 		}
 
@@ -3191,7 +3191,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Cillitha";
-			Title = "the bowcrafter";
+            Title = "a criadora de arcos";
 			Race = Race.Elf;
 			BodyValue = 0x25E;
 			Female = true;
@@ -3248,7 +3248,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Lohn";
-			Title = "the metal weaver";
+            Title = "o tecedor de metal";
 			Race = Race.Elf;
 			BodyValue = 0x25D;
 			Female = false;
@@ -3312,7 +3312,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Olla";
-			Title = "the metal weaver";
+            Title = "a tecedeira de metal";
 			Race = Race.Elf;
 			BodyValue = 0x25E;
 			Female = true;
@@ -3362,7 +3362,7 @@ namespace Server.Engines.MLQuests.Definitions
 		public override void Shout( PlayerMobile pm )
 		{
 			MLQuestSystem.Tell( this, pm, Utility.RandomList(
-				1074221, // Greetings!† I have a small task for you good traveler.
+				1074221, // Greetings! I have a small task for you good traveler.
 				1074212 // *yawn* You busy?
 			) );
 		}
@@ -3372,7 +3372,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Thallary";
-			Title = "the cloth weaver";
+            Title = "o tecel√£o";
 			Race = Race.Elf;
 			BodyValue = 0x25D;
 			Female = false;
@@ -3431,7 +3431,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Ahie";
-			Title = "the cloth weaver";
+            Title = "a tecel√£";
 			Race = Race.Elf;
 			BodyValue = 0x25E;
 			Female = true;
@@ -3479,7 +3479,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Tyeelor";
-			Title = "the expeditionist";
+            Title = "o expedicionista";
 			Race = Race.Elf;
 			BodyValue = 0x25D;
 			Female = false;
@@ -3543,7 +3543,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Athailon";
-			Title = "the expeditionist";
+            Title = "a expedicionista";
 			Race = Race.Elf;
 			BodyValue = 0x25E;
 			Female = true;
@@ -3604,8 +3604,8 @@ namespace Server.Engines.MLQuests.Definitions
 		public ElderTaellia()
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
-			Name = "Elder Taellia";
-			Title = "the wise";
+			Name = "Anci√£ Taellia";
+			Title = "a s√°bia";
 			Race = Race.Elf;
 			BodyValue = 0x25E;
 			Female = true;
@@ -3649,8 +3649,8 @@ namespace Server.Engines.MLQuests.Definitions
 		public ElderMallew()
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
-			Name = "Elder Mallew";
-			Title = "the wise";
+			Name = "Anci√£o Mallew";
+			Title = "o s√°bio";
 			Race = Race.Elf;
 			BodyValue = 0x25D;
 			Female = false;
@@ -3707,8 +3707,8 @@ namespace Server.Engines.MLQuests.Definitions
 		public ElderAbbein()
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
-			Name = "Elder Abbein";
-			Title = "the wise";
+			Name = "Anci√£ Abbein";
+            Title = "a s√°bia";
 			Race = Race.Elf;
 			BodyValue = 0x25E;
 			Female = true;
@@ -3751,8 +3751,8 @@ namespace Server.Engines.MLQuests.Definitions
 		public ElderVicaie()
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
-			Name = "Elder Vicaie";
-			Title = "the wise";
+			Name = "Anci√£ Vicaie";
+            Title = "a s√°bia";
 			Race = Race.Elf;
 			BodyValue = 0x25E;
 			Female = true;
@@ -3800,8 +3800,8 @@ namespace Server.Engines.MLQuests.Definitions
 		public ElderJothan()
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
-			Name = "Elder Jothan";
-			Title = "the wise";
+			Name = "Anci√£o Jothan";
+            Title = "o s√°bio";
 			Race = Race.Elf;
 			BodyValue = 0x25D;
 			Female = false;
@@ -3846,8 +3846,8 @@ namespace Server.Engines.MLQuests.Definitions
 		public ElderAlethanian()
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
-			Name = "Elder Alethanian";
-			Title = "the wise";
+			Name = "Anci√£ Alethanian";
+            Title = "a s√°bia";
 			Race = Race.Elf;
 			BodyValue = 0x25E;
 			Female = true;
@@ -3893,7 +3893,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Rebinil";
-			Title = "the healer";
+			Title = "a curandeira";
 			Race = Race.Elf;
 			BodyValue = 0x25E;
 			Female = true;
@@ -3937,7 +3937,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Aluniol";
-			Title = "the healer";
+			Title = "o curandeiro";
 			Race = Race.Elf;
 			BodyValue = 0x25D;
 			Female = false;
@@ -3981,7 +3981,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Olaeni";
-			Title = "the thaumaturgist";
+            Title = "a taumaturga";
 			Race = Race.Elf;
 			BodyValue = 0x25E;
 			Female = true;
@@ -4026,7 +4026,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Bolaevin";
-			Title = "the arcanist";
+			Title = "o arcanista";
 			Race = Race.Elf;
 			BodyValue = 0x25D;
 			Female = false;
@@ -4076,8 +4076,8 @@ namespace Server.Engines.MLQuests.Definitions
 		public LorekeeperAneen()
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
-			Name = "Lorekeeper Aneen";
-			Title = "the keeper of tradition";
+			Name = "Mestre Aneen";
+            Title = "o guardi√£o da tradi√ß√£o";
 			Race = Race.Elf;
 			BodyValue = 0x25D;
 			Female = false;
@@ -4121,7 +4121,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Daelas";
-			Title = "the arborist";
+            Title = "o arborista";
 			Race = Race.Elf;
 			BodyValue = 0x25D;
 			Female = false;
@@ -4174,7 +4174,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Alelle";
-			Title = "the arborist";
+            Title = "a arborista";
 			Race = Race.Elf;
 			BodyValue = 0x25E;
 			Female = true;
@@ -4231,8 +4231,8 @@ namespace Server.Engines.MLQuests.Definitions
 		public LorekeeperNillaen()
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
-			Name = "Lorekeeper Nillaen";
-			Title = "the keeper of tradition";
+			Name = "Anci√£o Nillaen";
+            Title = "a guardi√£ da tradi√ß√£o";
 			Race = Race.Elf;
 			BodyValue = 0x25E;
 			Female = true;
@@ -4282,8 +4282,8 @@ namespace Server.Engines.MLQuests.Definitions
 		public override void Shout( PlayerMobile pm )
 		{
 			MLQuestSystem.Tell( this, pm, Utility.RandomList(
-				1074204, // Greetings seeker.† I have an urgent matter for you, if you are willing.
-				1074200 // Thank goodness you are here, thereís no time to lose.
+				1074204, // Greetings seeker. I have an urgent matter for you, if you are willing.
+				1074200 // Thank goodness you are here, theres no time to lose.
 			) );
 		}
 
@@ -4291,8 +4291,8 @@ namespace Server.Engines.MLQuests.Definitions
 		public LorekeeperRyal()
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
-			Name = "Lorekeeper Ryal";
-			Title = "the keeper of tradition";
+			Name = "Mestre Ryal";
+            Title = "o guardi√£o da tradi√ß√£o";
 			Race = Race.Elf;
 			BodyValue = 0x25D;
 			Female = false;
@@ -4348,7 +4348,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Braen";
-			Title = "the thaumaturgist";
+            Title = "o taumaturgo";
 			Race = Race.Elf;
 			BodyValue = 0x25D;
 			Female = false;
@@ -4394,15 +4394,15 @@ namespace Server.Engines.MLQuests.Definitions
 		public override bool CanShout { get { return true; } }
 		public override void Shout( PlayerMobile pm )
 		{
-			MLQuestSystem.Tell( this, pm, 1074197 ); // Pardon me, but if you could spare some time Iíd greatly appreciate it.
+			MLQuestSystem.Tell( this, pm, 1074197 ); // Pardon me, but if you could spare some time Id greatly appreciate it.
 		}
 
 		[Constructable]
 		public ElderAcob()
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
-			Name = "Elder Acob";
-			Title = "the wise";
+			Name = "Anci√£o Acob";
+			Title = "o s√°bio";
 			Race = Race.Elf;
 			BodyValue = 0x25D;
 			Female = false;
@@ -4447,15 +4447,15 @@ namespace Server.Engines.MLQuests.Definitions
 		public override bool CanShout { get { return true; } }
 		public override void Shout( PlayerMobile pm )
 		{
-			MLQuestSystem.Tell( this, pm, 1074204 ); // Greetings seeker.† I have an urgent matter for you, if you are willing.
+			MLQuestSystem.Tell( this, pm, 1074204 ); // Greetings seeker. I have an urgent matter for you, if you are willing.
 		}
 
 		[Constructable]
 		public LorekeeperCalendor()
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
-			Name = "Lorekeeper Calendor";
-			Title = "the keeper of tradition";
+			Name = "Mestre Calendor";
+            Title = "a guardi√£ da tradi√ß√£o";
 			Race = Race.Elf;
 			BodyValue = 0x25E;
 			Female = true;
@@ -4508,8 +4508,8 @@ namespace Server.Engines.MLQuests.Definitions
 		public LorekeeperSiarra()
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
-			Name = "Lorekeeper Siarra";
-			Title = "the keeper of tradition";
+			Name = "Mestre Siarra";
+            Title = "a guardi√£ da tradi√ß√£o";
 			Race = Race.Elf;
 			BodyValue = 0x25E;
 			Female = true;

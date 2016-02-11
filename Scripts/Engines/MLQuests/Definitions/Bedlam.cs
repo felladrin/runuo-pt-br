@@ -93,7 +93,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Kia";
-			Title = "the student";
+			Title = "a estudante";
 			Race = Race.Human;
 			BodyValue = 0x191;
 			Female = true;
@@ -143,7 +143,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Emerillo";
-			Title = "the cook";
+			Title = "o cozinheiro";
 			Race = Race.Human;
 			BodyValue = 0x190;
 			Female = false;
@@ -188,7 +188,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Nythalia";
-			Title = "the student";
+			Title = "a estudante";
 			Race = Race.Human;
 			BodyValue = 0x191;
 			Female = true;

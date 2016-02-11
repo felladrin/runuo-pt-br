@@ -27,13 +27,13 @@ namespace Server.Mobiles
 			{
 				this.Body = 0x191;
 				this.Name = NameList.RandomName( "female" );
-				Title = "the Harbor Mistress";
+                Title = "o capitã do porto";
 			}
 			else
 			{
 				this.Body = 0x190;
 				this.Name = NameList.RandomName( "male" );
-				Title = "the Harbor Master";
+                Title = "o capitão do porto";
 			}
 			AddItem( new Shirt( Utility.RandomDyedHue() ) );
 			AddItem( new Boots() );

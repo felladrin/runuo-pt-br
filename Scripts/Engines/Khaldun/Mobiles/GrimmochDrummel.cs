@@ -12,7 +12,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public GrimmochDrummel() : base( AIType.AI_Archer, FightMode.Closest, 10, 1, 0.2, 0.4 )
 		{
-			Title = "the Cursed";
+			Title = "o amaldiçoado";
 
 			Hue = 0x8596;
 			Body = 0x190;

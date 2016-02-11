@@ -19,19 +19,20 @@ namespace Server.Mobiles
 
 
 			SpeechHue = Utility.RandomDyedHue();
-			Title = "the artist";
 			Hue = Utility.RandomSkinHue();
 
 
 			if( this.Female = Utility.RandomBool() )
 			{
 				this.Body = 0x191;
-				this.Name = NameList.RandomName( "female" );
+                this.Name = NameList.RandomName( "female" );
+                Title = "a artista";
 			}
 			else
 			{
 				this.Body = 0x190;
-				this.Name = NameList.RandomName( "male" );
+                this.Name = NameList.RandomName( "male" );
+                Title = "o artista";
 			}
 			AddItem( new Doublet( Utility.RandomDyedHue() ) );
 			AddItem( new Sandals( Utility.RandomNeutralHue() ) );

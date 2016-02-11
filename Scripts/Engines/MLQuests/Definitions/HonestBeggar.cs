@@ -82,7 +82,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Evan";
-			Title = "the Beggar";
+            Title = "o mendigo";
 			Race = Race.Human;
 			BodyValue = 0x190;
 			Female = false;
@@ -126,7 +126,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			Name = "Regina";
-			Title = "the Noble";
+			Title = "o nobre";
 			Race = Race.Human;
 			BodyValue = 0x191;
 			Female = true;

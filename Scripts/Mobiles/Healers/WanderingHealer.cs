@@ -23,7 +23,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public WanderingHealer()
 		{
-			Title = "the wandering healer";
+            Title = Female ? "a curandeira errante" : "o curandeiro errante";
 
 			AddItem( new GnarledStaff() );
 

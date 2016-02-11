@@ -153,13 +153,18 @@ namespace Server.Mobiles
 			}
 		}
 
-		public BaseVendor( string title )
+        public BaseVendor( string maleTitle, string femaleTitle = null )
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2 )
 		{
 			LoadSBInfo();
 
-			this.Title = title;
-			InitBody();
+            InitBody();
+
+            if (Female && !String.IsNullOrEmpty(femaleTitle))
+                this.Title = femaleTitle;
+            else
+                this.Title = maleTitle;
+                    
 			InitOutfit();
 
 			Container pack;

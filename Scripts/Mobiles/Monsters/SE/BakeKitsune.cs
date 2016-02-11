@@ -101,7 +101,7 @@ namespace Server.Mobiles
 				Name = NameList.RandomName( "male" );
 			}
 
-			Title = "the mystic llama herder";
+            Title = (Female ? "a mística pastora" : "o místico pastor") + " de lhamas";
 			Hue = Race.Human.RandomSkinHue();
 			HairItemID = Race.Human.RandomHair( this );
 			HairHue = Race.Human.RandomHairHue();

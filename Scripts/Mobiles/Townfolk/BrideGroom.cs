@@ -11,9 +11,9 @@ namespace Server.Mobiles
 		public BrideGroom()
 		{
 			if ( Female )
-				Title = "the bride";
+				Title = "a noiva";
 			else
-				Title = "the groom";
+				Title = "o noivo";
 		}
 
 		public override bool CanTeach{ get{ return true; } }

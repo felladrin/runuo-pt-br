@@ -21,7 +21,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public Healer()
 		{
-			Title = "the healer";
+            Title = Female ? "a curandeira" : "o curandeiro";
 
 			if ( !Core.AOS )
 				NameHue = 0x35;

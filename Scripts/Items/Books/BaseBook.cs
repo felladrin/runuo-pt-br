@@ -316,15 +316,15 @@ namespace Server.Items
 		
 		public override void OnSingleClick ( Mobile from )
 		{
-			LabelTo( from, "{0} by {1}", m_Title, m_Author );
-			LabelTo( from, "[{0} pages]", m_Pages.Length );
+			LabelTo( from, "{0} por {1}", m_Title, m_Author );
+			LabelTo( from, "[{0} páginas]", m_Pages.Length );
 		}
 		
 		public override void OnDoubleClick ( Mobile from )
 		{
 			if ( m_Title == null && m_Author == null && m_Writable == true )
 			{
-				Title = "a book";
+				Title = "um livro";
 				Author = from.Name;
 			}
 

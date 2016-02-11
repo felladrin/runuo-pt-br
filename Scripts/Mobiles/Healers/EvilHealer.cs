@@ -21,7 +21,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public EvilHealer()
 		{
-			Title = "the healer";
+            Title = Female ? "a curandeira" : "o curandeiro";
 
 			Karma = -10000;
 

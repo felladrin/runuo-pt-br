@@ -20,7 +20,7 @@ namespace Server.Mobiles
 		public ArcherGuard( Mobile target ) : base( target )
 		{
 			InitStats( 100, 125, 25 );
-			Title = "the guard";
+            Title = (Female ? "a" : "o") + " guarda";
 
 			SpeechHue = Utility.RandomDyedHue();
 

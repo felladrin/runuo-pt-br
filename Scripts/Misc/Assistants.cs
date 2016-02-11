@@ -10,18 +10,18 @@ namespace Server.Misc
 	{
 		private static class Settings
 		{
-			public const bool Enabled = false;
-			public const bool KickOnFailure = true; // It will also kick clients running without assistants
+            public static bool Enabled = false;
+            public static bool KickOnFailure = true; // It will also kick clients running without assistants
 
 			public static readonly TimeSpan HandshakeTimeout = TimeSpan.FromSeconds(30.0);
 			public static readonly TimeSpan DisconnectDelay = TimeSpan.FromSeconds(15.0);
 
-			public const string WarningMessage = "The server was unable to negotiate features with your assistant. "
-								+ "You must download and run an updated version of <A HREF=\"http://uosteam.com\">UOSteam</A>"
-								+ " or <A HREF=\"https://bitbucket.org/msturgill/razor-releases/downloads\">Razor</A>."
-								+ "<BR><BR>Make sure you've checked the option <B>Negotiate features with server</B>, "
-								+ "once you have this box checked you may log in and play normally."
-								+ "<BR><BR>You will be disconnected shortly.";
+            public const string WarningMessage = "O servidor foi incapaz de negociar os recursos com o seu assistente. "
+                + "Você deve baixar e executar uma versão atualizada do <A HREF=\"http://uosteam.com\">UOSteam</A>"
+                + " ou <A HREF=\"https://bitbucket.org/msturgill/razor-releases/downloads\">Razor</A>."
+                + "<BR><BR>Certifique-se de ter marcado a opção <B>Negotiate features with server</B>, "
+                + "uma vez que tenha esta opção marcada, você poderá entrar e jogar normalmente."
+                + "<BR><BR>Você será desconectado em breve.";
 
 			public static void Configure()
 			{
@@ -152,7 +152,7 @@ namespace Server.Misc
 
 				if (!Settings.KickOnFailure)
 				{
-					Console.WriteLine("Player '{0}' failed to negotiate features.", m);
+                    Console.WriteLine("Jogador '{0}' falhou na negociação com o assistente.", m);
 				}
 				else if (m.NetState != null && m.NetState.Running)
 				{
@@ -177,7 +177,7 @@ namespace Server.Misc
 
 					m_Dictionary.Remove(m);
 
-					Console.WriteLine("Player {0} kicked (Failed assistant handshake)", m);
+					Console.WriteLine("Jogador {0} foi desconectado (Falhou na negociação com o assistente)", m);
 				}
 			}
 

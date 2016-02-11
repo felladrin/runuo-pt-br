@@ -466,7 +466,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2.0 )
 		{
 			Name = "Aeluva";
-			Title = "the arcanist";
+			Title = "a arcanista";
 			Race = Race.Elf;
 			Female = true;
 			Body = 606;
@@ -524,7 +524,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2.0 )
 		{
 			Name = "Koole";
-			Title = "the arcanist";
+			Title = "o arcanista";
 			Race = Race.Elf;
 			Body = 605;
 			Hue = Race.RandomSkinHue();
@@ -587,7 +587,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2.0 )
 		{
 			Name = "Synaeva";
-			Title = "the arcanist";
+			Title = "a arcanista";
 			Race = Race.Elf;
 			Female = true;
 			Body = 606;
@@ -649,8 +649,8 @@ namespace Server.Engines.MLQuests.Definitions
 		public ElderBrae()
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.5, 2.0 )
 		{
-			Name = "Elder Brae";
-			Title = "the wise";
+			Name = "Anciã Brae";
+			Title = "a sábia";
 			Race = Race.Elf;
 			Female = true;
 			Body = 606;

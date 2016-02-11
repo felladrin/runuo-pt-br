@@ -12,7 +12,7 @@ namespace Server.Mobiles
 		public EvilMage() : base( AIType.AI_Mage, FightMode.Closest, 10, 1, 0.2, 0.4 ) 
 		{ 
 			Name = NameList.RandomName( "evil mage" );
-            Title = "o mago maléfico";
+            Title = Female ? "a feiticeira malígna" : "o mago maléfico";
 			Body = 124;
 
 			SetStr( 81, 105 );

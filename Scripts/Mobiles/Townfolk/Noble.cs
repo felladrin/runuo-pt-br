@@ -10,7 +10,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public Noble()
 		{
-			Title = "the noble";
+            Title = (Female ? "a" : "o") + " nobre";
 
 			SetSkill( SkillName.Parry, 80.0, 100.0 );
 			SetSkill( SkillName.Swords, 80.0, 100.0 );

@@ -14,7 +14,7 @@ namespace Server.Engines.Help
 	{
 		private Mobile m_From;
 
-		public ContainedMenu( Mobile from ) : base( "You already have an open help request. We will have someone assist you as soon as possible.  What would you like to do?", new string[]{ "Leave my old help request like it is.", "Remove my help request from the queue." } )
+		public ContainedMenu( Mobile from ) : base( "Você já possui um chamado de ajuda em aberto. Nós enviaremos alguém para ajudá-lo assim que possível.  O que você gostaria de fazer?", new string[]{ "Deixe meu pedido de ajuda como está.", "Remova meu pedido de ajuda da fila." } )
 		{
 			m_From = from;
 		}
@@ -37,7 +37,7 @@ namespace Server.Engines.Help
 				if ( entry != null && entry.Handler == null )
 				{
 					m_From.SendLocalizedMessage( 1005307, "", 0x35 ); // Removed help request.
-					entry.AddResponse( entry.Sender, "[Canceled]" );
+					entry.AddResponse( entry.Sender, "[Cancelado]" );
 					PageQueue.Remove( entry );
 				}
 				else
@@ -111,48 +111,48 @@ namespace Server.Engines.Help
 			if ( isYoung )
 			{
 				AddButton( 80, 75, 5540, 5541, 9, GumpButtonType.Reply, 2 );
-				AddHtml( 110, 75, 450, 58, @"<BODY><BASEFONT COLOR=BLACK><u>Young Player Haven Transport.</u> Select this option if you want to be transported to Haven.</BODY>", true, true );
+				AddHtml( 110, 75, 450, 58, @"<BODY><BASEFONT COLOR=BLACK><u>Transporte para Haven para Jogadores Jovens.</u> Selecione esta opção se você deseja ser transportado para Haven.</BODY>", true, true );
 
 				AddButton( 80, 140, 5540, 5541, 1, GumpButtonType.Reply, 2 );
-				AddHtml( 110, 140, 450, 58, @"<u>General question about Ultima Online.</u> Select this option if you have a general gameplay question, need help learning to use a skill, or if you would like to search the UO Knowledge Base.", true, true );
+                AddHtml( 110, 140, 450, 58, @"<u>Questões gerais sobre o Ultima Online.</u> Selecione esta opção se você tiver uma pergunta geral sobre jogabilidade, se precisa de ajuda para aprender a usar uma habilidade, ou se gostaria de pesquisar na Base de Conhecimento do UO.", true, true );
 
 				AddButton( 80, 205, 5540, 5541, 2, GumpButtonType.Reply, 0 );
-				AddHtml( 110, 205, 450, 58, @"<u>My character is physically stuck in the game.</u> This choice only covers cases where your character is physically stuck in a location they cannot move out of. This option will only work two times in 24 hours.", true, true );
+                AddHtml( 110, 205, 450, 58, @"<u>Meu personagem está travado.</u> Esta escolha só cobre casos em que seu personagem está travado em um local do qual não pode sair. Esta opção só funcionará duas vezes a cada 24 horas.", true, true );
 
 				AddButton( 80, 270, 5540, 5541, 0, GumpButtonType.Page, 3 );
-				AddHtml( 110, 270, 450, 58, @"<u>Another player is harassing me.</u> Another player is verbally harassing your character. When you select this option you will be sending a text log to Origin Systems. To see what constitutes harassment please visit http://support.uo.com/gm_9.html.", true, true );
+                AddHtml( 110, 270, 450, 58, @"<u>Um jogador está me perturbando.</u> Um jogador está assediando seu personagem verbalmente. Ao selecionar esta opção, você estará enviando um log de texto para os gerenciadores do shard.", true, true );
 
 				AddButton( 80, 335, 5540, 5541, 0, GumpButtonType.Page, 2 );
-				AddHtml( 110, 335, 450, 58, @"<u>Other.</u> If you are experiencing a problem in the game that does not fall into one of the other categories or is not addressed on the Support web page (located at http://support.uo.com), please use this option.", true, true );
+                AddHtml( 110, 335, 450, 58, @"<u>Outro.</u> Se você estiver enfrentando um problema no jogo que não se enquadram em uma das outras categorias, utilize esta opção.", true, true );
 			}
 			else
 			{
 				AddButton( 80, 90, 5540, 5541, 1, GumpButtonType.Reply, 2 );
-				AddHtml( 110, 90, 450, 74, @"<u>General question about Ultima Online.</u> Select this option if you have a general gameplay question, need help learning to use a skill, or if you would like to search the UO Knowledge Base.", true, true );
+                AddHtml( 110, 90, 450, 74, @"<u>Questões gerais sobre o Ultima Online.</u> Selecione esta opção se você tiver uma pergunta geral sobre jogabilidade, se precisa de ajuda para aprender a usar uma habilidade, ou se gostaria de pesquisar na Base de Conhecimento do UO.", true, true );
 
 				AddButton( 80, 170, 5540, 5541, 2, GumpButtonType.Reply, 0 );
-				AddHtml( 110, 170, 450, 74, @"<u>My character is physically stuck in the game.</u> This choice only covers cases where your character is physically stuck in a location they cannot move out of. This option will only work two times in 24 hours.", true, true );
+                AddHtml( 110, 170, 450, 74, @"<u>Meu personagem está travado.</u> Esta escolha só cobre casos em que seu personagem está travado em um local do qual não pode sair. Esta opção só funcionará duas vezes a cada 24 horas.", true, true );
 
 				AddButton( 80, 250, 5540, 5541, 0, GumpButtonType.Page, 3 );
-				AddHtml( 110, 250, 450, 74, @"<u>Another player is harassing me.</u> Another player is verbally harassing your character. When you select this option you will be sending a text log to Origin Systems. To see what constitutes harassment please visit http://support.uo.com/gm_9.html.", true, true );
+                AddHtml( 110, 250, 450, 74, @"<u>Um jogador está me perturbando.</u> Um jogador está assediando seu personagem verbalmente. Ao selecionar esta opção, você estará enviando um log de texto para os gerenciadores do shard.", true, true );
 
 				AddButton( 80, 330, 5540, 5541, 0, GumpButtonType.Page, 2 );
-				AddHtml( 110, 330, 450, 74, @"<u>Other.</u> If you are experiencing a problem in the game that does not fall into one of the other categories or is not addressed on the Support web page (located at http://support.uo.com), please use this option.", true, true );
+                AddHtml( 110, 330, 450, 74, @"<u>Outro.</u> Se você estiver enfrentando um problema no jogo que não se enquadram em uma das outras categorias, utilize esta opção.", true, true );
 			}
 
 			AddPage( 2 );
 
 			AddButton( 80, 90, 5540, 5541, 3, GumpButtonType.Reply, 0 );
-			AddHtml( 110, 90, 450, 74, @"<u>Report a bug or contact Origin.</u> Use this option to launch your web browser and mail in a bug report. Your report will be read by our Quality Assurance Staff. We apologize for not being able to reply to individual reports. ", true, true );
+            AddHtml( 110, 90, 450, 74, @"<u>Relatar um erro.</u> Use esta opção para iniciar o navegador web e e-mail em um relatório de bug. Seu relatório será lido por nossa equipe de Garantia da Qualidade. Pedimos desculpas por não ser capaz de responder a relatórios individuais.", true, true );
 
 			AddButton( 80, 170, 5540, 5541, 4, GumpButtonType.Reply, 0 );
-			AddHtml( 110, 170, 450, 74, @"<u>Suggestion for the Game.</u> If you'd like to make a suggestion for the game, it should be directed to the Development Team Members who participate in the discussion forums on the UO.Com web site. Choosing this option will take you to the Discussion Forums. ", true, true );
+			AddHtml( 110, 170, 450, 74, @"<u>Enviar uma sugestão.</u> Escolha esta opção se você deseja fazer uma sugestão à equipe de desenvolvimento do shard.", true, true );
 
 			AddButton( 80, 250, 5540, 5541, 5, GumpButtonType.Reply, 0 );
-			AddHtml( 110, 250, 450, 74, @"<u>Account Management</u> For questions regarding your account such as forgotten passwords, payment options, account activation, and account transfer, please choose this option.", true, true );
+            AddHtml( 110, 250, 450, 74, @"<u>Gerenciamento de Conta.</u> Para questões relacionadas com a sua conta, tais como senhas esquecidas, a ativação da conta e transferência de conta, escolha esta opção.", true, true );
 
 			AddButton( 80, 330, 5540, 5541, 6, GumpButtonType.Reply, 0 );
-			AddHtml( 110, 330, 450, 74, @"<u>Other.</u> If you are experiencing a problem in the game that does not fall into one of the other categories or is not addressed on the Support web page (located at http://support.uo.com), and requires in-game assistance, use this option. ", true, true );
+            AddHtml( 110, 330, 450, 74, @"<u>Outro.</u> Se você estiver enfrentando um problema no jogo que não se enquadram em uma das outras categorias, utilize esta opção.", true, true );
 
 			AddPage( 3 );
 

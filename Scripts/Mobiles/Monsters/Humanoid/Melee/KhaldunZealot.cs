@@ -17,7 +17,7 @@ namespace Server.Mobiles
 		{
 			Body = 0x190;
 			Name = "Zealot of Khaldun";
-			Title = "the Knight";
+			Title = "o cavaleiro";
 			Hue = 0;
 
 			SetStr( 351, 400 );

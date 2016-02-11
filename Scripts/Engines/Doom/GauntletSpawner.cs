@@ -556,7 +556,7 @@ namespace Server.Engines.Doom
 
 			/* Begin outfit */
 			dealer.Name = "Nix";
-			dealer.Title = "the Variety Dealer";
+			dealer.Title = "o vendedor de variedades";
 
 			dealer.Body = 400;
 			dealer.Female = false;

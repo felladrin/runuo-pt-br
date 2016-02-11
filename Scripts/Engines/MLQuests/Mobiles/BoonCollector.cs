@@ -277,7 +277,7 @@ namespace Server.Engines.MLQuests.Mobiles
 		public Darius()
 		{
 			Name = "Darius";
-			Title = "the wise";
+            Title = "o sábio";
 			Race = Race.Elf;
 			Hue = Race.RandomSkinHue();
 			SpeechHue = Utility.RandomDyedHue();
@@ -373,7 +373,7 @@ namespace Server.Engines.MLQuests.Mobiles
 		public Nedrick()
 		{
 			Name = "Nedrick";
-			Title = "the iron worker";
+            Title = "o ferreiro";
 			Race = Race.Human;
 			Hue = Race.RandomSkinHue();
 			SpeechHue = Utility.RandomDyedHue();

@@ -10,7 +10,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public Messenger()
 		{
-			Title = "the messenger";
+            Title = Female ? "a mensageira" : "o mensageiro";
 		}
 
 		public override bool CanTeach{ get{ return true; } }

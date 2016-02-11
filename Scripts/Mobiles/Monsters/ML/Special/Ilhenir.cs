@@ -9,7 +9,7 @@ using Server.Engines.CannedEvil;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "a corpse of Ilhenir" )]
+	[CorpseName( "o corpo de Ilhenir" )]
 	public class Ilhenir : BaseChampion
 	{
 		public override ChampionSkullType SkullType { get { return ChampionSkullType.Pain; } }
@@ -41,7 +41,7 @@ namespace Server.Mobiles
 			: base( AIType.AI_Mage )
 		{
 			Name = "Ilhenir";
-			Title = "the Stained";
+            Title = "o manchado";
 			Body = 0x103;
 
 			BaseSoundID = 589;

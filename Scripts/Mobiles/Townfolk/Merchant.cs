@@ -10,7 +10,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public Merchant()
 		{
-			Title = "the merchant";
+            Title = (Female ? "a" : "o") + " comerciante";
 			SetSkill( SkillName.ItemID, 55.0, 78.0 );
 			SetSkill( SkillName.ArmsLore, 55, 78 );
 		}

@@ -14,10 +14,7 @@ namespace Server.Mobiles
 		[Constructable]
 		public GypsyAnimalTrainer()
 		{
-			if ( Utility.RandomBool() )
-				Title = "the gypsy animal trainer";
-			else
-				Title = "the gypsy animal herder";
+            Title = Female ? "a treinadora de animais cigana" : "o treinador de animais cigano";
 		}
 
 		public override VendorShoeType ShoeType

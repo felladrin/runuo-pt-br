@@ -8,7 +8,7 @@ using Server.Engines.CannedEvil;
 
 namespace Server.Mobiles
 {
-	[CorpseName( "the remains of Meraktus" )]
+	[CorpseName( "os resto de Meraktus" )]
 	public class Meraktus : BaseChampion
 	{
 		public override ChampionSkullType SkullType{ get{ return ChampionSkullType.Pain; } }
@@ -32,7 +32,7 @@ namespace Server.Mobiles
 			: base(AIType.AI_Melee)
 		{
 			Name = "Meraktus";
-			Title = "the Tormented";
+            Title = "o atormentado";
 			Body = 263;
 			BaseSoundID = 680;
 			Hue = 0x835;

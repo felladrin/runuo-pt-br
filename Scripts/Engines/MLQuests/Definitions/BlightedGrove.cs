@@ -185,7 +185,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.2, 0.4 )
 		{
 			Name = "Jamal";
-			Title = "the Fisherman";
+			Title = "o pescador";
 			Body = 400;
 			Hue = Race.RandomSkinHue();
 			InitStats( 100, 100, 25 );
@@ -238,7 +238,7 @@ namespace Server.Engines.MLQuests.Definitions
 			: base( AIType.AI_Vendor, FightMode.None, 2, 1, 0.2, 0.4 )
 		{
 			Name = "Iosep";
-			Title = "the Exporter";
+			Title = "o exportador";
 			Body = 400;
 			Hue = Race.RandomSkinHue();
 			InitStats( 100, 100, 25 );
