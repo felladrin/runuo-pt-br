@@ -8,7 +8,7 @@ Este é um fork do [RunUO 2.6](https://github.com/runuo/runuo/tree/releases/2.6)
 
 ## Rodando o Servidor no Windows
 
-1. [Baixe este repositório](https://github.com/felladrin/last-wish/archive/master.zip) ou clone-o.
+1. [Baixe este repositório](https://github.com/felladrin/runuo-pt-br/archive/master.zip) ou clone-o.
 2. Rode `CompilarParaWindows.bat` para gerar os arquivos *RunUO.exe* e *RunUO.exe.config* na pasta.
 3. Então execute RunUO.exe
 
