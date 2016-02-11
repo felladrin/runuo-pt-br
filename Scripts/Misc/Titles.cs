@@ -210,7 +210,7 @@ namespace Server.Misc
 
 			if ( customTitle != null && (customTitle = customTitle.Trim()).Length > 0 )
 			{
-				title.AppendFormat( " {0}", customTitle );
+				title.AppendFormat( ", {0}", customTitle );
 			}
 			else if ( showSkillTitle && beheld.Player )
 			{
@@ -221,7 +221,7 @@ namespace Server.Misc
 				}
 			}
 
-			return title.ToString();
+            return Encoding.ASCII.GetString(Encoding.GetEncoding(1251).GetBytes(title.ToString()));
 		}
 
 		public static string GetSkillTitle( Mobile mob ) {

@@ -1072,12 +1072,17 @@ namespace Server
 			string prefix = "";
 
 			if( ShowFameTitle && (m_Player || m_Body.IsHuman) && m_Fame >= 10000 )
-				prefix = m_Female ? "Lady" : "Lord";
+				prefix = m_Female ? "Lady" : "Lorde";
 
 			string suffix = "";
 
-			if( PropertyTitle && Title != null && Title.Length > 0 )
-				suffix = Title;
+            if (PropertyTitle && Title != null && Title.Length > 0)
+            {
+                suffix = Title;
+
+                if (!String.IsNullOrEmpty(name))
+                    name += ',';
+            }
 
 			BaseGuild guild = m_Guild;
 
